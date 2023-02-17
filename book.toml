@@ -1,0 +1,15 @@
+[book]
+authors = ["vismate"]
+language = "hu"
+multilingual = false
+src = "src"
+title = "4. félévi jegyzetek"
+
+[output.katex]
+
+[output.html]
+no-section-label = true
+default-theme = "ayu"
+
+[preprocessor.katex]
+renderers = ["html"]
