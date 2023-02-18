@@ -27,4 +27,5 @@
 
 # Számítógépes grafika
 - [Előadás](./cg/ea/about.md)
+  - [1. Bevezetés a számítógépes grafikába](./cg/ea/01.md)
 - [Gyakorlat](./cg/gyak/about.md)
