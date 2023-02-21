@@ -16,6 +16,7 @@ Két írásbeli részvizsga alapján:
 - [Előadás anyagok](http://cg.elte.hu/index.php/grafika-bsc-eloadas-anyagok/)\
 - [Mintafeladatok](http://cg.elte.hu/~robi/eloadas/2022-osz/Grafika_feladatok.pdf)\
 - [Ellenőrző kérdések](http://cg.elte.hu/~bsc_cg/EA/RegiFelevek/)\
+- [Krammer Gergely - Grafika jegyzet](http://krammer.web.elte.hu/infokar/grafika/jegyzet/)
 
 ### Ajánlott irodalom
 - [Szirmay-Kalos László, Antal György, Csonka Ferenc:
