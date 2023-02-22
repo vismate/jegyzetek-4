@@ -29,4 +29,5 @@
 - [Előadás](./cg/ea/about.md)
   - [1. Bevezetés a számítógépes grafikába](./cg/ea/01.md)
   - [2. Koordináta-rendszerek, egyenesek és síkok](./cg/ea/02.md)
+  - [3. Transzformációk](./cg/ea/03.md)
 - [Gyakorlat](./cg/gyak/about.md)
