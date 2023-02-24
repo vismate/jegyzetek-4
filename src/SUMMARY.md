@@ -31,4 +31,5 @@
   - [2. Koordináta-rendszerek, egyenesek és síkok](./cg/ea/02.md)
   - [3. Transzformációk](./cg/ea/03.md)
   - [4. Görbék, felületek és a fény útja](./cg/ea/04.md)
+  - [5. Raycasting](./cg/ea/05.md)
 - [Gyakorlat](./cg/gyak/about.md)
