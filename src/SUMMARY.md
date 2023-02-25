@@ -32,4 +32,5 @@
   - [3. Transzformációk](./cg/ea/03.md)
   - [4. Görbék, felületek és a fény útja](./cg/ea/04.md)
   - [5. Raycasting](./cg/ea/05.md)
+  - [6. Fejlettebb raycasting](./cg/ea/06.md)
 - [Gyakorlat](./cg/gyak/about.md)
