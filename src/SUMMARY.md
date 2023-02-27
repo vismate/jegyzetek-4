@@ -13,17 +13,21 @@
 # Analízis II.
 - [Előadás](./anal2/ea/about.md)
 - [Gyakorlat](./anal2/gyak/about.md)
+  - [1. gyakorlat](./anal2/gyak/01.md)
 
 # Operációs rendszerek
 - [Előadás](./os/ea/about.md)
+  - [1. előadás](./os/ea/01.md)
 - [Gyakorlat](./os/gyak/about.md)
 
 # Szoftver mély neuronhálók alkalmazásához
-- [Gyakorlat](./soft_deep_neural/about.md)
+- [Előadás](./soft_deep_neural/about.md)
+  - [1. Bevezetés a gépi tanulás feladataiba és fajtáiba](./soft_deep_neural/01.md)
 
 # Szoftvertechnológia
 - [Előadás](./softtech/ea/about.md)
 - [Gyakorlat](./softtech/gyak/about.md)
+  - [1. Gyakorlat](./softtech/gyak/01.md)
 
 # Számítógépes grafika
 - [Előadás](./cg/ea/about.md)
@@ -34,3 +38,4 @@
   - [5. Raycasting](./cg/ea/05.md)
   - [6. Fejlettebb raycasting](./cg/ea/06.md)
 - [Gyakorlat](./cg/gyak/about.md)
+  - [1. Gyakorlat](./cg/gyak/01.md)
