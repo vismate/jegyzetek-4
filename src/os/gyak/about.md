@@ -7,5 +7,11 @@
 **Csoport:** 12\
 
 ## Értékelés
+- 2 évfolyam zárthelyi
+  - 1) elméleti kvíz előadás anyagából
+  - 2) kódolós a félév végén
+- 2 beadandó
+  - Nincs rá pont, csak teljesítés a fontos
 
 ## Források
+- [Canvas](https://canvas.elte.hu/courses/35103)

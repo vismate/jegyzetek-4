@@ -4,21 +4,25 @@
 
 # A számításelmélet alapjai I.
 - [Előadás](./szamelm1/ea/about.md)
+  - [1. Alapfogalmak, nyelvek, grammatikák](./szamelm1/ea/01.md)
 - [Gyakorlat](./szamelm1/gyak/about.md)
 
 # Adatbázisok I.
 - [Előadás](./adatb1/ea/about.md)
+  - [1. Bevezetés, relációs adatmodell és relációs algebra lekérdezések optimalizációja](./adatb1/ea/01.md)
 - [Gyakorlat](./adatb1/gyak/about.md)
+ - [1. Gyakorlat](./adatb1/gyak/01.md)
 
 # Analízis II.
 - [Előadás](./anal2/ea/about.md)
 - [Gyakorlat](./anal2/gyak/about.md)
-  - [1. gyakorlat](./anal2/gyak/01.md)
+  - [1. Gyakorlat](./anal2/gyak/01.md)
 
 # Operációs rendszerek
 - [Előadás](./os/ea/about.md)
-  - [1. előadás](./os/ea/01.md)
+  - [1. Előadás](./os/ea/01.md)
 - [Gyakorlat](./os/gyak/about.md)
+  - [1. Gyakrlat](./os/gyak/01.md)
 
 # Szoftver mély neuronhálók alkalmazásához
 - [Előadás](./soft_deep_neural/about.md)
@@ -26,6 +30,7 @@
 
 # Szoftvertechnológia
 - [Előadás](./softtech/ea/about.md)
+  -  [1. Szoftverfejlesztési folyamat](./softtech/ea/01.md)
 - [Gyakorlat](./softtech/gyak/about.md)
   - [1. Gyakorlat](./softtech/gyak/01.md)
 
