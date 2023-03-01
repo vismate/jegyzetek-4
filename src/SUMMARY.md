@@ -6,6 +6,7 @@
 - [Előadás](./szamelm1/ea/about.md)
   - [1. Alapfogalmak, nyelvek, grammatikák](./szamelm1/ea/01.md)
 - [Gyakorlat](./szamelm1/gyak/about.md)
+  - [1. Gyakorlat](./szamelm1/gyak/01.md)
 
 # Adatbázisok I.
 - [Előadás](./adatb1/ea/about.md)
@@ -15,6 +16,7 @@
 
 # Analízis II.
 - [Előadás](./anal2/ea/about.md)
+  - [1. Differenciálszámítás I.](./anal2/ea/01.md)
 - [Gyakorlat](./anal2/gyak/about.md)
   - [1. Gyakorlat](./anal2/gyak/01.md)
 

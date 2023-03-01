@@ -7,5 +7,7 @@
 **Csoport:** 2\
 
 ## Értékelés
+- 2 ZH, egyet lehet javítani
 
 ## Források
+- [Canvas](https://canvas.elte.hu/courses/35218)

@@ -10,7 +10,7 @@
 - 10 kisZH (definíció, tétel előadásból és órai/házi feladat)
   - max 40 pont
   - min 16
-- 2 ZH (7. és 13. hét)
+- 2 ZH (ápr 6-7 és máj 25-26)
   - max 40 - 40 pont
   - min 11 pont
 - Megajánlott vizsgajegy:
