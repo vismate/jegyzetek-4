@@ -14,6 +14,6 @@
 
 ## Források
 - [Windows Internals](https://learn.microsoft.com/en-us/sysinternals/resources/windows-internals)
-- [Knapp Gábor, Adamis Gusztáv: Operációs rendszerek](TBA)
-- [Andrew S. Tanembaum, Herbert Boss: Modern Operating Systems](TBA)
-- [Andrew S. Tanembaum, Albert S, Woodhull: Operációs rendszerek](TBA)
+- [Knapp Gábor, Adamis Gusztáv: Operációs rendszerek](https://docplayer.hu/2952449-Operacios-rendszerek.html)
+- [Andrew S. Tanembaum, Herbert Boss: Modern Operating Systems](https://csc-knu.github.io/sys-prog/books/Andrew%20S.%20Tanenbaum%20-%20Modern%20Operating%20Systems.pdf)
+- [Andrew S. Tanembaum, Albert S. Woodhull: Operációs rendszerek](https://drive.google.com/file/d/1RDI61aeG03YUvfsA1cqObxFU_YxF038u/view?usp=sharing)
