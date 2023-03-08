@@ -7,7 +7,8 @@
   - [1. Alapfogalmak, nyelvek, grammatikák](./szamelm1/ea/01.md)
   - [2. Grammatikák csoportosítása](./szamelm1/ea/02.md)
 - [Gyakorlat](./szamelm1/gyak/about.md)
-  - [1. Gyakorlat](./szamelm1/gyak/01.md)
+  - [1. Nyelvek](./szamelm1/gyak/01.md)
+  - [2. Grammatikák](./szamelm1/gyak/02.md)
 
 # Adatbázisok I.
 - [Előadás](./adatb1/ea/about.md)
@@ -20,6 +21,7 @@
 # Analízis II.
 - [Előadás](./anal2/ea/about.md)
   - [1. Differenciálszámítás I.](./anal2/ea/01.md)
+  - [2. Differenciálszámítás II. és függvénytulajdonságok kapcsolata a deriválttal I.](./anal2/ea/02.md)
 - [Gyakorlat](./anal2/gyak/about.md)
   - [1. Gyakorlat](./anal2/gyak/01.md)
   - [2. Gyakorlat](./anal2/gyak/02.md)
