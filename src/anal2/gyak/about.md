@@ -19,5 +19,5 @@
   - kisZH 12p tételekre, definíciókra
 
 ## Források
-- [Canvas](TBA)
+- [Canvas](https://canvas.elte.hu/courses/35224)
 - [Követelmények - pdf](https://numanal.inf.elte.hu/~szili/Oktatas/An_II_F_2023_tavasz/AnIIF-Kov-2023_tavasz.pdf)

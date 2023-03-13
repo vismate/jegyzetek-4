@@ -25,11 +25,12 @@
 - [Gyakorlat](./anal2/gyak/about.md)
   - [1. Gyakorlat](./anal2/gyak/01.md)
   - [2. Gyakorlat](./anal2/gyak/02.md)
-
+  - [3. Gyakorlat](./anal2/gyak/03.md)
 # Operációs rendszerek
 - [Előadás](./os/ea/about.md)
   - [1. Előadás](./os/ea/01.md)
   - [2. Előadás](./os/ea/02.md)
+  - [3. Előadás](./os/ea/03.md)
 - [Gyakorlat](./os/gyak/about.md)
   - [1. C bevezető](./os/gyak/01.md)
   - [2. Rendszerhívások, fájlkezelés](./os/gyak/02.md)
@@ -38,14 +39,17 @@
 - [Előadás](./soft_deep_neural/about.md)
   - [1. Bevezetés a gépi tanulás feladataiba és fajtáiba](./soft_deep_neural/01.md)
   - [2. Regressziós technikák](./soft_deep_neural/02.md)
+  - [3. Többváltozós regresszió, klasszifikáció, logisztikus regresszió](./soft_deep_neural/03.md)
 
 # Szoftvertechnológia
 - [Előadás](./softtech/ea/about.md)
-  -  [1. Szoftverfejlesztési folyamat](./softtech/ea/01.md)
-  -  [2. Specifikáció és követelménymenedzsment](./softtech/ea/02.md)
+  - [1. Szoftverfejlesztési folyamat](./softtech/ea/01.md)
+  - [2. Specifikáció és követelménymenedzsment](./softtech/ea/02.md)
+  - [3. Objektumorientált tervezés](./softtech/ea/03.md)
 - [Gyakorlat](./softtech/gyak/about.md)
   - [1. Gyakorlat](./softtech/gyak/01.md)
   - [2. Gyakorlat](./softtech/gyak/02.md)
+  - [3. Gyakorlat](./softtech/gyak/03.md)
 
 # Számítógépes grafika
 - [Előadás](./cg/ea/about.md)
@@ -58,3 +62,4 @@
 - [Gyakorlat](./cg/gyak/about.md)
   - [1. Gyakorlat](./cg/gyak/01.md)
   - [2. Gyakorlat](./cg/gyak/02.md)
+  - [3. Gyakorlat](./cg/gyak/03.md)

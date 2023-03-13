@@ -15,5 +15,4 @@
 - Pluszpontok - ZH-khoz adódik hozzá
 
 ## Források
-- [Canvas](TBA)
 - [Tananyagok](https://vargadaniel.web.elte.hu/kurzusok/ab1gy22232.html)
