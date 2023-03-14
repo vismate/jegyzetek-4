@@ -1,0 +1,225 @@
+<!DOCTYPE HTML>
+<html lang="hu" class="sidebar-visible no-js ayu">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Előadás - 4. félévi jegyzetek</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../favicon.svg">
+        <link rel="shortcut icon" href="../favicon.png">
+        <link rel="stylesheet" href="../css/variables.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/chrome.css">
+        <link rel="stylesheet" href="../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../highlight.css">
+        <link rel="stylesheet" href="../tomorrow-night.css">
+        <link rel="stylesheet" href="../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../src/image_style.css">
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "ayu";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('ayu')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../about.html">A jegyzetről</a></li><li class="chapter-item expanded affix "><li class="part-title">A számításelmélet alapjai I.</li><li class="chapter-item expanded "><a href="../szamelm1/ea/about.html">Előadás</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../szamelm1/ea/01.html">1. Alapfogalmak, nyelvek, grammatikák</a></li><li class="chapter-item expanded "><a href="../szamelm1/ea/02.html">2. Grammatikák csoportosítása</a></li><li class="chapter-item expanded "><a href="../szamelm1/ea/03.html">3. Lineáris grammatikák, 3-típusú grammatikák normálformája, reguláris kifelyezések</a></li></ol></li><li class="chapter-item expanded "><a href="../szamelm1/gyak/about.html">Gyakorlat</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../szamelm1/gyak/01.html">1. Nyelvek</a></li><li class="chapter-item expanded "><a href="../szamelm1/gyak/02.html">2. Grammatikák</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Adatbázisok I.</li><li class="chapter-item expanded "><a href="../adatb1/ea/about.html">Előadás</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../adatb1/ea/01.html">1. Bevezetés és relációs adatmodell</a></li><li class="chapter-item expanded "><a href="../adatb1/ea/02.html">2. Relációs algebra lekérdezések optimizációja és bevezetés az SQL-be</a></li><li class="chapter-item expanded "><a href="../adatb1/ea/03.html">3. Bevezetés az SQL-be, haladó SQL</a></li></ol></li><li class="chapter-item expanded "><a href="../adatb1/gyak/about.html">Gyakorlat</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../adatb1/gyak/01.html">1. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../adatb1/gyak/02.html">2. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../adatb1/gyak/03.html">3. Gyakorlat</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Analízis II.</li><li class="chapter-item expanded "><a href="../anal2/ea/about.html">Előadás</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../anal2/ea/01.html">1. Differenciálszámítás I.</a></li><li class="chapter-item expanded "><a href="../anal2/ea/02.html">2. Differenciálszámítás II. és függvénytulajdonságok kapcsolata a deriválttal I.</a></li></ol></li><li class="chapter-item expanded "><a href="../anal2/gyak/about.html">Gyakorlat</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../anal2/gyak/01.html">1. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../anal2/gyak/02.html">2. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../anal2/gyak/03.html">3. Gyakorlat</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Operációs rendszerek</li><li class="chapter-item expanded "><a href="../os/ea/about.html">Előadás</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../os/ea/01.html">1. Előadás</a></li><li class="chapter-item expanded "><a href="../os/ea/02.html">2. Előadás</a></li><li class="chapter-item expanded "><a href="../os/ea/03.html">3. Előadás</a></li></ol></li><li class="chapter-item expanded "><a href="../os/gyak/about.html">Gyakorlat</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../os/gyak/01.html">1. C bevezető</a></li><li class="chapter-item expanded "><a href="../os/gyak/02.html">2. Rendszerhívások, fájlkezelés</a></li><li class="chapter-item expanded "><a href="../os/gyak/03.html">3. Processzkezelés</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Szoftver mély neuronhálók alkalmazásához</li><li class="chapter-item expanded "><a href="../soft_deep_neural/about.html" class="active">Előadás</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../soft_deep_neural/01.html">1. Bevezetés a gépi tanulás feladataiba és fajtáiba</a></li><li class="chapter-item expanded "><a href="../soft_deep_neural/02.html">2. Regressziós technikák</a></li><li class="chapter-item expanded "><a href="../soft_deep_neural/03.html">3. Többváltozós regresszió, klasszifikáció, logisztikus regresszió</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Szoftvertechnológia</li><li class="chapter-item expanded "><a href="../softtech/ea/about.html">Előadás</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../softtech/ea/01.html">1. Szoftverfejlesztési folyamat</a></li><li class="chapter-item expanded "><a href="../softtech/ea/02.html">2. Specifikáció és követelménymenedzsment</a></li><li class="chapter-item expanded "><a href="../softtech/ea/03.html">3. Objektumorientált tervezés</a></li></ol></li><li class="chapter-item expanded "><a href="../softtech/gyak/about.html">Gyakorlat</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../softtech/gyak/01.html">1. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../softtech/gyak/02.html">2. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../softtech/gyak/03.html">3. Gyakorlat</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Számítógépes grafika</li><li class="chapter-item expanded "><a href="../cg/ea/about.html">Előadás</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../cg/ea/01.html">1. Bevezetés a számítógépes grafikába</a></li><li class="chapter-item expanded "><a href="../cg/ea/02.html">2. Koordináta-rendszerek, egyenesek és síkok</a></li><li class="chapter-item expanded "><a href="../cg/ea/03.html">3. Transzformációk</a></li><li class="chapter-item expanded "><a href="../cg/ea/04.html">4. Görbék, felületek és a fény útja</a></li><li class="chapter-item expanded "><a href="../cg/ea/05.html">5. Raycasting</a></li><li class="chapter-item expanded "><a href="../cg/ea/06.html">6. Fejlettebb raycasting</a></li></ol></li><li class="chapter-item expanded "><a href="../cg/gyak/about.html">Gyakorlat</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../cg/gyak/01.html">1. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../cg/gyak/02.html">2. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../cg/gyak/03.html">3. Gyakorlat</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">4. félévi jegyzetek</h1>
+
+                    <div class="right-buttons">
+                        <a href="../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/vismate/jegyzetek-4" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<h1 id="szoftver-mély-neuronhálók-alkalmazásához-előadás"><a class="header" href="#szoftver-mély-neuronhálók-alkalmazásához-előadás">Szoftver mély neuronhálók alkalmazásához előadás</a></h1>
+<h2 id="alapadatok"><a class="header" href="#alapadatok">Alapadatok</a></h2>
+<p><strong>Idő:</strong> Hétfő, 18:00 - 20:00<br />
+<strong>Helyszín:</strong> Északi Tömb -1.75 Konferenciaterem<br />
+<strong>Oktató:</strong> Varga Viktor és Kovács Bálint<br />
+<strong>Csoport:</strong> 1</p>
+<h2 id="Értékelés"><a class="header" href="#Értékelés">Értékelés</a></h2>
+<ul>
+<li>3-4 canvas kvíz röpdolgozat
+<ul>
+<li>Nem kötelező, de érdemes megcsinálni</li>
+</ul>
+</li>
+<li>3 kötelező házifeladat</li>
+<li>Szóbeli vizsga</li>
+<li>Szorgalmi házi feladat</li>
+</ul>
+<h2 id="források"><a class="header" href="#források">Források</a></h2>
+<ul>
+<li><a href="https://canvas.elte.hu/courses/34761">Canvas</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLLssT5z_DsK-h9vYZkQkYNWcItqhlRJLN">Machine Learning — Andrew Ng, Stanford University</a></li>
+<li><a href="https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab">&quot;Essence of linear algebra&quot; - 3Blue1Brown</a></li>
+<li><a href="https://d2l.ai/">d2l.ai</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../os/gyak/03.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../soft_deep_neural/01.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../os/gyak/03.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../soft_deep_neural/01.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../elasticlunr.min.js"></script>
+        <script src="../mark.min.js"></script>
+        <script src="../searcher.js"></script>
+
+        <script src="../clipboard.min.js"></script>
+        <script src="../highlight.js"></script>
+        <script src="../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

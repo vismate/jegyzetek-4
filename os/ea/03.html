@@ -1,0 +1,342 @@
+<!DOCTYPE HTML>
+<html lang="hu" class="sidebar-visible no-js ayu">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>3. Előadás - 4. félévi jegyzetek</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../src/image_style.css">
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "ayu";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('ayu')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../../about.html">A jegyzetről</a></li><li class="chapter-item expanded affix "><li class="part-title">A számításelmélet alapjai I.</li><li class="chapter-item expanded "><a href="../../szamelm1/ea/about.html">Előadás</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../szamelm1/ea/01.html">1. Alapfogalmak, nyelvek, grammatikák</a></li><li class="chapter-item expanded "><a href="../../szamelm1/ea/02.html">2. Grammatikák csoportosítása</a></li><li class="chapter-item expanded "><a href="../../szamelm1/ea/03.html">3. Lineáris grammatikák, 3-típusú grammatikák normálformája, reguláris kifelyezések</a></li></ol></li><li class="chapter-item expanded "><a href="../../szamelm1/gyak/about.html">Gyakorlat</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../szamelm1/gyak/01.html">1. Nyelvek</a></li><li class="chapter-item expanded "><a href="../../szamelm1/gyak/02.html">2. Grammatikák</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Adatbázisok I.</li><li class="chapter-item expanded "><a href="../../adatb1/ea/about.html">Előadás</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../adatb1/ea/01.html">1. Bevezetés és relációs adatmodell</a></li><li class="chapter-item expanded "><a href="../../adatb1/ea/02.html">2. Relációs algebra lekérdezések optimizációja és bevezetés az SQL-be</a></li><li class="chapter-item expanded "><a href="../../adatb1/ea/03.html">3. Bevezetés az SQL-be, haladó SQL</a></li></ol></li><li class="chapter-item expanded "><a href="../../adatb1/gyak/about.html">Gyakorlat</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../adatb1/gyak/01.html">1. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../adatb1/gyak/02.html">2. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../adatb1/gyak/03.html">3. Gyakorlat</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Analízis II.</li><li class="chapter-item expanded "><a href="../../anal2/ea/about.html">Előadás</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../anal2/ea/01.html">1. Differenciálszámítás I.</a></li><li class="chapter-item expanded "><a href="../../anal2/ea/02.html">2. Differenciálszámítás II. és függvénytulajdonságok kapcsolata a deriválttal I.</a></li></ol></li><li class="chapter-item expanded "><a href="../../anal2/gyak/about.html">Gyakorlat</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../anal2/gyak/01.html">1. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../anal2/gyak/02.html">2. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../anal2/gyak/03.html">3. Gyakorlat</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Operációs rendszerek</li><li class="chapter-item expanded "><a href="../../os/ea/about.html">Előadás</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../os/ea/01.html">1. Előadás</a></li><li class="chapter-item expanded "><a href="../../os/ea/02.html">2. Előadás</a></li><li class="chapter-item expanded "><a href="../../os/ea/03.html" class="active">3. Előadás</a></li></ol></li><li class="chapter-item expanded "><a href="../../os/gyak/about.html">Gyakorlat</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../os/gyak/01.html">1. C bevezető</a></li><li class="chapter-item expanded "><a href="../../os/gyak/02.html">2. Rendszerhívások, fájlkezelés</a></li><li class="chapter-item expanded "><a href="../../os/gyak/03.html">3. Processzkezelés</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Szoftver mély neuronhálók alkalmazásához</li><li class="chapter-item expanded "><a href="../../soft_deep_neural/about.html">Előadás</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../soft_deep_neural/01.html">1. Bevezetés a gépi tanulás feladataiba és fajtáiba</a></li><li class="chapter-item expanded "><a href="../../soft_deep_neural/02.html">2. Regressziós technikák</a></li><li class="chapter-item expanded "><a href="../../soft_deep_neural/03.html">3. Többváltozós regresszió, klasszifikáció, logisztikus regresszió</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Szoftvertechnológia</li><li class="chapter-item expanded "><a href="../../softtech/ea/about.html">Előadás</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../softtech/ea/01.html">1. Szoftverfejlesztési folyamat</a></li><li class="chapter-item expanded "><a href="../../softtech/ea/02.html">2. Specifikáció és követelménymenedzsment</a></li><li class="chapter-item expanded "><a href="../../softtech/ea/03.html">3. Objektumorientált tervezés</a></li></ol></li><li class="chapter-item expanded "><a href="../../softtech/gyak/about.html">Gyakorlat</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../softtech/gyak/01.html">1. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../softtech/gyak/02.html">2. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../softtech/gyak/03.html">3. Gyakorlat</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Számítógépes grafika</li><li class="chapter-item expanded "><a href="../../cg/ea/about.html">Előadás</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../cg/ea/01.html">1. Bevezetés a számítógépes grafikába</a></li><li class="chapter-item expanded "><a href="../../cg/ea/02.html">2. Koordináta-rendszerek, egyenesek és síkok</a></li><li class="chapter-item expanded "><a href="../../cg/ea/03.html">3. Transzformációk</a></li><li class="chapter-item expanded "><a href="../../cg/ea/04.html">4. Görbék, felületek és a fény útja</a></li><li class="chapter-item expanded "><a href="../../cg/ea/05.html">5. Raycasting</a></li><li class="chapter-item expanded "><a href="../../cg/ea/06.html">6. Fejlettebb raycasting</a></li></ol></li><li class="chapter-item expanded "><a href="../../cg/gyak/about.html">Gyakorlat</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../cg/gyak/01.html">1. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../cg/gyak/02.html">2. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../cg/gyak/03.html">3. Gyakorlat</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">4. félévi jegyzetek</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/vismate/jegyzetek-4" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<h1 id="3-előadás"><a class="header" href="#3-előadás">3. Előadás</a></h1>
+<!--toc:start-->
+<ul>
+<li><a href="#3-el%C5%91ad%C3%A1s">3. Előadás</a>
+<ul>
+<li><a href="#oper%C3%A1ci%C3%B3s-rendszer-gener%C3%A1ci%C3%B3k">Operációs rendszer generációk</a></li>
+<li><a href="#minix-3">MINIX 3</a></li>
+<li><a href="#rendszerh%C3%ADv%C3%A1sok">Rendszerhívások</a>
+<ul>
+<li><a href="#process-kezel%C3%A9s">Process kezelés</a></li>
+<li><a href="#f%C3%A1jlkezel%C3%A9s">Fájlkezelés</a></li>
+</ul>
+</li>
+<li><a href="#oper%C3%A1ci%C3%B3s-rendszer-strukt%C3%BAr%C3%A1k">Operációs rendszer struktúrák</a>
+<ul>
+<li><a href="#monolitikus-rendszerek">Monolitikus rendszerek</a></li>
+<li><a href="#r%C3%A9tegelt-szerkezet">Rétegelt szerkezet</a></li>
+<li><a href="#kliensszerver-modell">Kliens/szerver modell</a></li>
+</ul>
+</li>
+<li><a href="#virtu%C3%A1lis-g%C3%A9pek">Virtuális gépek</a>
+<ul>
+<li><a href="#virtualiz%C3%A1ci%C3%B3s-fogalmak">Virtualizációs fogalmak</a></li>
+</ul>
+</li>
+<li><a href="#oper%C3%A1ci%C3%B3s-rendszer-elv%C3%A1r%C3%A1sok">Operációs rendszer elvárások</a></li>
+<li><a href="#forr%C3%A1sok">Források</a></li>
+</ul>
+</li>
+</ul>
+<!--toc:end-->
+<h2 id="operációs-rendszer-generációk"><a class="header" href="#operációs-rendszer-generációk">Operációs rendszer generációk</a></h2>
+<ol>
+<li>Történelmi generáció, tisztán mechanikus, nincs oprendszer</li>
+<li>Első generáció (1940-1955), kapcsolótála, relé, vákumcső</li>
+</ol>
+<ul>
+<li>Egedi gépek</li>
+<li>Neumann modell</li>
+<li>Gépi kód</li>
+<li>Lyukkártya</li>
+</ul>
+<ol start="3">
+<li>Második generáció (1955-1965) tranzisztoros rendszerek</li>
+</ol>
+<ul>
+<li>Megbízható elemk</li>
+<li>Géptermek (mainframe)</li>
+<li>Szalagos egységek, üzemeltetési fázisok elkülönítése</li>
+<li>FORTRAN nyelv</li>
+<li>Oprendszerek</li>
+</ul>
+<ol start="4">
+<li>Harmadik generáció (1965-1980), intrgrált áramkörök</li>
+</ol>
+<ul>
+<li>Azonos rendszerek, felépítések, kompatibilitás</li>
+<li>Multiprogramozás, multitask megjelenése</li>
+<li>Spooling, időosztás</li>
+</ul>
+<ol start="5">
+<li>1980-napjainkig személyi számítógépek, Windows</li>
+</ol>
+<ul>
+<li>Large Scale Integration áramkörök, CPU fejlődés</li>
+<li>Hálózati osztott rendszerek</li>
+<li>GUI</li>
+</ul>
+<h2 id="minix-3"><a class="header" href="#minix-3">MINIX 3</a></h2>
+<p>AT&amp;T engedélye alapján használható volt</p>
+<p>Linus Torvalds fejlseztette ez alapján a <strong>Linux</strong>ot. </p>
+<h2 id="rendszerhívások"><a class="header" href="#rendszerhívások">Rendszerhívások</a></h2>
+<p>Azok a szolgáltatások, melyek az operációs rendszer ésa  felhasználói programok közti kapcsolatot biztosítják.</p>
+<p>Két csoportja:</p>
+<ul>
+<li>Folyamat kezelő csoport</li>
+<li>Fájlkezelő csoport</li>
+</ul>
+<h3 id="process-kezelés"><a class="header" href="#process-kezelés">Process kezelés</a></h3>
+<p>Processz: végrehajtás alatt lévő program</p>
+<ul>
+<li>Saját címtartomány</li>
+<li>Processz táblázat (cím, register)</li>
+<li>Processz indítás, megszüntetés</li>
+<li>Processz felfüggesztés (memóriatérkép + táblázat mentés)</li>
+<li>Processzek kommunikációja (signalok)</li>
+</ul>
+<h3 id="fájlkezelés"><a class="header" href="#fájlkezelés">Fájlkezelés</a></h3>
+<p>Egy főkönyvtár, fastruktúra (fájl, könyvtár)</p>
+<p>Jogosultságok,  műveletek</p>
+<p>Speciális fájlok: adatcső</p>
+<h2 id="operációs-rendszer-struktúrák"><a class="header" href="#operációs-rendszer-struktúrák">Operációs rendszer struktúrák</a></h2>
+<h3 id="monolitikus-rendszerek"><a class="header" href="#monolitikus-rendszerek">Monolitikus rendszerek</a></h3>
+<p>Rendszerkönyvtár egyetlen rendszer, így mindenki mindenkit láthat.</p>
+<p>Információelrejtés nem igazán van.</p>
+<p>Rendszerhívás során gyakran kernel módba kapcsolja a CPU-t</p>
+<h3 id="rétegelt-szerkezet"><a class="header" href="#rétegelt-szerkezet">Rétegelt szerkezet</a></h3>
+<ol start="5">
+<li>Gépkezelő</li>
+<li>Felhasználói programok</li>
+<li>I/O kezelés</li>
+<li>Gépkezelő-folyamat</li>
+<li>Memória és dobkezelés</li>
+<li>Processzorhozzáférés és multiprogramozás</li>
+</ol>
+<h3 id="kliensszerver-modell"><a class="header" href="#kliensszerver-modell">Kliens/szerver modell</a></h3>
+<p>Felhasználói program: kliens program
+Kiszolgáló program: szerver program</p>
+<p>Mindegyik felhasználó módban fut <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.549em;vertical-align:-0.024em;"></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">⟹</span><span class="mspace" style="margin-right:0.2778em;"></span></span></span></span> egyre kevesebb funkció marad a kernelben</p>
+<h2 id="virtuális-gépek"><a class="header" href="#virtuális-gépek">Virtuális gépek</a></h2>
+<p>Eredetileg az IBM-től származik az ötlet
+Virtuális gép monitor: a hardvert pontosan másolja
+Ezt tetszőleges példányban képes volt sokszorozni</p>
+<h3 id="virtualizációs-fogalmak"><a class="header" href="#virtualizációs-fogalmak">Virtualizációs fogalmak</a></h3>
+<ul>
+<li>host rendszer</li>
+<li>paravirtualizáció - vendég rendszerben módosítják a kritikus utasításokat, ma már nem igazán használt.</li>
+<li>szoftveres virtualizáció</li>
+<li>hardveres virtualizáció</li>
+<li>konténerizáció</li>
+</ul>
+<h2 id="operációs-rendszer-elvárások"><a class="header" href="#operációs-rendszer-elvárások">Operációs rendszer elvárások</a></h2>
+<ul>
+<li>Hatékonyság</li>
+<li>Megbízhatóság
+<ul>
+<li>adatok megőrzése</li>
+<li>rendelkezésre állás</li>
+<li>hibatűrés</li>
+</ul>
+</li>
+<li>Biztonság</li>
+<li>Kompatibilitás, hordozhatóság</li>
+<li>Alacsony energia felhasználás</li>
+<li>Rugalmasság</li>
+<li>Kezelhetőség</li>
+</ul>
+<h2 id="források"><a class="header" href="#források">Források</a></h2>
+<ul>
+<li><a href="https://canvas.elte.hu/courses/35103/files/2123360/download?download_frd=1">Diasor</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../os/ea/02.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../../os/gyak/about.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../os/ea/02.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../../os/gyak/about.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
