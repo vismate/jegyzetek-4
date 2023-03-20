@@ -25,15 +25,18 @@
 - [Előadás](./anal2/ea/about.md)
   - [1. Differenciálszámítás I.](./anal2/ea/01.md)
   - [2. Differenciálszámítás II. és függvénytulajdonságok kapcsolata a deriválttal I.](./anal2/ea/02.md)
+  - [3. Függvénytulajdonságok kapcsolata a deriválttal II.](./anal2/ea/03.md)
 - [Gyakorlat](./anal2/gyak/about.md)
   - [1. Gyakorlat](./anal2/gyak/01.md)
   - [2. Gyakorlat](./anal2/gyak/02.md)
   - [3. Gyakorlat](./anal2/gyak/03.md)
+  - [4. Gyakorlat](./anal2/gyak/04.md)
 # Operációs rendszerek
 - [Előadás](./os/ea/about.md)
   - [1. Előadás](./os/ea/01.md)
   - [2. Előadás](./os/ea/02.md)
   - [3. Előadás](./os/ea/03.md)
+  - [4. Előadás](./os/ea/04.md)
 - [Gyakorlat](./os/gyak/about.md)
   - [1. C bevezető](./os/gyak/01.md)
   - [2. Rendszerhívások, fájlkezelés](./os/gyak/02.md)
@@ -44,16 +47,19 @@
   - [1. Bevezetés a gépi tanulás feladataiba és fajtáiba](./soft_deep_neural/01.md)
   - [2. Regressziós technikák](./soft_deep_neural/02.md)
   - [3. Többváltozós regresszió, klasszifikáció, logisztikus regresszió](./soft_deep_neural/03.md)
+  - [4. Python, numpy](./soft_deep_neural/04.md)
 
 # Szoftvertechnológia
 - [Előadás](./softtech/ea/about.md)
   - [1. Szoftverfejlesztési folyamat](./softtech/ea/01.md)
   - [2. Specifikáció és követelménymenedzsment](./softtech/ea/02.md)
   - [3. Objektumorientált tervezés](./softtech/ea/03.md)
+  - [4. Objektumorientált tervezési szempontok és minták](./softtech/ea/04.md)
 - [Gyakorlat](./softtech/gyak/about.md)
   - [1. Gyakorlat](./softtech/gyak/01.md)
   - [2. Gyakorlat](./softtech/gyak/02.md)
   - [3. Gyakorlat](./softtech/gyak/03.md)
+  - [4. Gyakorlat](./softtech/gyak/04.md)
 
 # Számítógépes grafika
 - [Előadás](./cg/ea/about.md)
@@ -67,3 +73,4 @@
   - [1. Gyakorlat](./cg/gyak/01.md)
   - [2. Gyakorlat](./cg/gyak/02.md)
   - [3. Gyakorlat](./cg/gyak/03.md)
+  - [4. Gyakorlat](./cg/gyak/04.md)
