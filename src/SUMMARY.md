@@ -7,25 +7,31 @@
   - [1. Alapfogalmak, nyelvek, grammatikák](./szamelm1/ea/01.md)
   - [2. Grammatikák csoportosítása](./szamelm1/ea/02.md)
   - [3. Lineáris grammatikák, 3-típusú grammatikák normálformája, reguláris kifelyezések](./szamelm1/ea/03.md)
+  - [4. Véges automaták](./szamelm1/ea/04.md)
 - [Gyakorlat](./szamelm1/gyak/about.md)
   - [1. Nyelvek](./szamelm1/gyak/01.md)
-  - [2. Grammatikák](./szamelm1/gyak/02.md)
+  - [2. Grammatikák I](./szamelm1/gyak/02.md)
+  - [3. Gyakorlat - elmaradt](./elmaradt.md)
+  - [4. Grammatikák II](./szamelm1/gyak/04.md)
 
 # Adatbázisok I.
 - [Előadás](./adatb1/ea/about.md)
   - [1. Bevezetés és relációs adatmodell](./adatb1/ea/01.md)
   - [2. Relációs algebra lekérdezések optimizációja és bevezetés az SQL-be](./adatb1/ea/02.md)
   - [3. Bevezetés az SQL-be, haladó SQL](./adatb1/ea/03.md)
+  - [4. Megszorítások, tranzakciók, nézettáblák, indexek, jogosultságok](./adatb1/ea/04.md)
 - [Gyakorlat](./adatb1/gyak/about.md)
   - [1. Gyakorlat](./adatb1/gyak/01.md)
   - [2. Gyakorlat](./adatb1/gyak/02.md)
   - [3. Gyakorlat](./adatb1/gyak/03.md)
+  - [4. Gyakorlat](./adatb1/gyak/04.md)
 
 # Analízis II.
 - [Előadás](./anal2/ea/about.md)
   - [1. Differenciálszámítás I.](./anal2/ea/01.md)
   - [2. Differenciálszámítás II. és függvénytulajdonságok kapcsolata a deriválttal I.](./anal2/ea/02.md)
   - [3. Függvénytulajdonságok kapcsolata a deriválttal II.](./anal2/ea/03.md)
+  - [4. Speciális függvények](./anal2/ea/04.md)
 - [Gyakorlat](./anal2/gyak/about.md)
   - [1. Gyakorlat](./anal2/gyak/01.md)
   - [2. Gyakorlat](./anal2/gyak/02.md)
@@ -41,6 +47,7 @@
   - [1. C bevezető](./os/gyak/01.md)
   - [2. Rendszerhívások, fájlkezelés](./os/gyak/02.md)
   - [3. Processzkezelés](./os/gyak/03.md)
+  - [4. Signal](./os/gyak/04.md)
 
 # Szoftver mély neuronhálók alkalmazásához
 - [Előadás](./soft_deep_neural/about.md)
