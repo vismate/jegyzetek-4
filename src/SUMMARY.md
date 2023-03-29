@@ -14,6 +14,7 @@
   - [2. Grammatikák I](./szamelm1/gyak/02.md)
   - [3. Gyakorlat - elmaradt](./elmaradt.md)
   - [4. Grammatikák II](./szamelm1/gyak/04.md)
+  - [5. Grammatikák III, reguláris kifelyezések](./szamelm1/gyak/05.md)
 
 # Adatbázisok I.
 - [Előadás](./adatb1/ea/about.md)
