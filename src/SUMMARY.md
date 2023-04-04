@@ -9,12 +9,13 @@
   - [3. Lineáris grammatikák, 3-típusú grammatikák normálformája, reguláris kifelyezések](./szamelm1/ea/03.md)
   - [4. Véges automaták](./szamelm1/ea/04.md)
   - [5. Véges automata determinizálása, összefüggő automaták, algoritmikus eldöntési probléma](./szamelm1/ea/05.md)
+  - [6. Maradéknyelv, myhill-nerode tétel, minimális-, redukált-, faktor automata,](./szamelm1/ea/06.md)
 - [Gyakorlat](./szamelm1/gyak/about.md)
   - [1. Nyelvek](./szamelm1/gyak/01.md)
   - [2. Grammatikák I](./szamelm1/gyak/02.md)
   - [3. Gyakorlat - elmaradt](./elmaradt.md)
   - [4. Grammatikák II](./szamelm1/gyak/04.md)
-  - [5. Grammatikák III, reguláris kifelyezések](./szamelm1/gyak/05.md)
+  - [5. Grammatikák III, reguláris kifejezések](./szamelm1/gyak/05.md)
 
 # Adatbázisok I.
 - [Előadás](./adatb1/ea/about.md)
@@ -23,12 +24,14 @@
   - [3. Bevezetés az SQL-be, haladó SQL](./adatb1/ea/03.md)
   - [4. Megszorítások, tranzakciók, nézettáblák, indexek, jogosultságok](./adatb1/ea/04.md)
   - [5. Adatbázis tervezés I](./adatb1/ea/05.md)
+  - [6. Adatbázis tervezés II](./adatb1/ea/06.md)
 - [Gyakorlat](./adatb1/gyak/about.md)
   - [1. Gyakorlat](./adatb1/gyak/01.md)
   - [2. Gyakorlat](./adatb1/gyak/02.md)
   - [3. Gyakorlat](./adatb1/gyak/03.md)
   - [4. Gyakorlat](./adatb1/gyak/04.md)
   - [5. Gyakorlat](./adatb1/gyak/05.md)
+  - [6. Gyakorlat](./adatb1/gyak/06.md)
 
 # Analízis II.
 - [Előadás](./anal2/ea/about.md)
@@ -37,6 +40,7 @@
   - [3. Függvénytulajdonságok kapcsolata a deriválttal II.](./anal2/ea/03.md)
   - [4. Speciális függvények](./anal2/ea/04.md)
   - [5. Taylor polinomok és Taylor sorok](./anal2/ea/05.md)
+  - [6. Integrálszámítás I](./anal2/ea/06.md)
 - [Gyakorlat](./anal2/gyak/about.md)
   - [1. Gyakorlat](./anal2/gyak/01.md)
   - [2. Gyakorlat](./anal2/gyak/02.md)
@@ -73,6 +77,7 @@
   - [3. Processzkezelés](./os/gyak/03.md)
   - [4. Signal](./os/gyak/04.md)
   - [5. Pipe](./os/gyak/05.md)
+  - [6. Messages, shared memory, semafor](./os/gyak/06.md)
 
 # Szoftver mély neuronhálók alkalmazásához
 - [Előadás](./soft_deep_neural/about.md)
