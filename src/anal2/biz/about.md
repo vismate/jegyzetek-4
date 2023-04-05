@@ -11,7 +11,7 @@
 8. [A monotonitás és a derivált kapcsolata](./08.md)
 9. [A konvexitás és a kétszeres derivált kapcsolata](./09.md)
 10. [A L'Hospital-szabály a 0/0 esetben](./10.md)
-11. [A deriválhatóság ekvivalens átfogalmazása lineáris közelítéssel](./10.md)
+11. [A deriválhatóság ekvivalens átfogalmazása lineáris közelítéssel](./11.md)
 12. [A Taylor-formula a Lagrange-féle maradéktaggal](./12.md)
 13. [Elégséges feltétel függvények Taylor-sorral történő előállítása](./13.md)
 
