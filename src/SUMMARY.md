@@ -10,6 +10,7 @@
   - [4. Véges automaták](./szamelm1/ea/04.md)
   - [5. Véges automata determinizálása, összefüggő automaták, algoritmikus eldöntési probléma](./szamelm1/ea/05.md)
   - [6. Maradéknyelv, myhill-nerode tétel, minimális-, redukált-, faktor automata,](./szamelm1/ea/06.md)
+  - [7. Nyelvi egyenletrendszerek megoldása, általánosított automata](./szamelm1/ea/07.md)
 - [Gyakorlat](./szamelm1/gyak/about.md)
   - [1. Nyelvek](./szamelm1/gyak/01.md)
   - [2. Grammatikák I](./szamelm1/gyak/02.md)
@@ -26,6 +27,7 @@
   - [4. Megszorítások, tranzakciók, nézettáblák, indexek, jogosultságok](./adatb1/ea/04.md)
   - [5. Adatbázis tervezés I](./adatb1/ea/05.md)
   - [6. Adatbázis tervezés II](./adatb1/ea/06.md)
+  - [7. Többértékű függőségek, egyed kapcsolat modell](./adatb1/ea/07.md)
 - [Gyakorlat](./adatb1/gyak/about.md)
   - [1. Gyakorlat](./adatb1/gyak/01.md)
   - [2. Gyakorlat](./adatb1/gyak/02.md)
@@ -33,6 +35,7 @@
   - [4. Gyakorlat](./adatb1/gyak/04.md)
   - [5. Gyakorlat](./adatb1/gyak/05.md)
   - [6. Gyakorlat](./adatb1/gyak/06.md)
+  - [7. Gyakorlat](./adatb1/gyak/07.md)
 
 # Analízis II.
 - [Előadás](./anal2/ea/about.md)
@@ -49,6 +52,7 @@
   - [4. Gyakorlat](./anal2/gyak/04.md)
   - [5. Gyakorlat](./anal2/gyak/05.md)
   - [6. Gyakorlat](./anal2/gyak/06.md)
+  - [7. Gyakorlat - elmaradt, pótlás várható](./elmaradt.md)
 - [Tételbizonyítások](./anal2/biz/about.md)
   - [1. A folytonosság és a deriválhatóság kapcsolata](./anal2/biz/01.md)
   - [2. A szorzatfüggvény deriválási szabálya](./anal2/biz/02.md)
@@ -72,6 +76,7 @@
   - [4. Előadás](./os/ea/04.md)
   - [5. Előadás](./os/ea/05.md)
   - [6. Előadás](./os/ea/06.md)
+  - [7. Előadás - elmaradt, pótlás várható](./elmaradt.md)
 - [Gyakorlat](./os/gyak/about.md)
   - [1. C bevezető](./os/gyak/01.md)
   - [2. Rendszerhívások, fájlkezelés](./os/gyak/02.md)
@@ -79,6 +84,7 @@
   - [4. Signal](./os/gyak/04.md)
   - [5. Pipe](./os/gyak/05.md)
   - [6. Messages, shared memory, semafor](./os/gyak/06.md)
+  - [7. Beadandó bemutatás](./os/gyak/07.md)
 
 # Szoftver mély neuronhálók alkalmazásához
 - [Előadás](./soft_deep_neural/about.md)
@@ -88,6 +94,7 @@
   - [4. Python, numpy](./soft_deep_neural/04.md)
   - [5. Feladatmegoldások](./soft_deep_neural/05.md)
   - [6. Betanítási költség, túltanulás, alultanulás, neuron](./soft_deep_neural/06.md)
+  - [7. Előadás - elmaradt](./elmaradt.md)
 
 # Szoftvertechnológia
 - [Előadás](./softtech/ea/about.md)
@@ -97,6 +104,7 @@
   - [4. Objektumorientált tervezési szempontok és minták](./softtech/ea/04.md)
   - [5. Projekteszközök, verziókezelés](./softtech/ea/05.md)
   - [6. Build systems](./softtech/ea/06.md)
+  - [7. Verifikáció és validáció](./softtech/ea/07.md)
 - [Gyakorlat](./softtech/gyak/about.md)
   - [1. Gyakorlat](./softtech/gyak/01.md)
   - [2. Gyakorlat](./softtech/gyak/02.md)
@@ -104,6 +112,7 @@
   - [4. Gyakorlat](./softtech/gyak/04.md)
   - [5. Gyakorlat](./softtech/gyak/05.md)
   - [6. Gyakorlat](./softtech/gyak/06.md)
+  - [7. Gyakorlat - elmaradt](./elmaradt.md)
 
 # Számítógépes grafika
 - [Előadás](./cg/ea/about.md)
@@ -120,3 +129,4 @@
   - [4. Gyakorlat](./cg/gyak/04.md)
   - [5. Gyakorlat](./cg/gyak/05.md)
   - [6. Gyakorlat](./cg/gyak/06.md)
+  - [7. Gyakorlat - elmaradt](./elmaradt.md)
