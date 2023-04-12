@@ -18,6 +18,7 @@
   - [4. Grammatikák II](./szamelm1/gyak/04.md)
   - [5. Grammatikák III, reguláris kifejezések](./szamelm1/gyak/05.md)
   - [6. Véges automaták](./szamelm1/gyak/06.md)
+  - [7. Zárthelyi](./szamelm1/gyak/07.md)
 
 # Adatbázisok I.
 - [Előadás](./adatb1/ea/about.md)
@@ -45,6 +46,7 @@
   - [4. Speciális függvények](./anal2/ea/04.md)
   - [5. Taylor polinomok és Taylor sorok](./anal2/ea/05.md)
   - [6. Integrálszámítás I](./anal2/ea/06.md)
+  - [7. Integrálszámítás II](./anal2/ea/07.md)
 - [Gyakorlat](./anal2/gyak/about.md)
   - [1. Gyakorlat](./anal2/gyak/01.md)
   - [2. Gyakorlat](./anal2/gyak/02.md)
