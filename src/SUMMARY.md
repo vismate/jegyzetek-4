@@ -20,6 +20,7 @@
   - [5. Grammatikák III, reguláris kifejezések](./szamelm1/gyak/05.md)
   - [6. Véges automaták](./szamelm1/gyak/06.md)
   - [7. Zárthelyi](./szamelm1/gyak/07.md)
+  - [8. ZH megoldás, grammatikák visszamenőleg, általános automaták](./szamelm/gyak/08.md)
 
 # Adatbázisok I.
 - [Előadás](./adatb1/ea/about.md)
@@ -50,6 +51,7 @@
   - [5. Taylor polinomok és Taylor sorok](./anal2/ea/05.md)
   - [6. Integrálszámítás I](./anal2/ea/06.md)
   - [7. Integrálszámítás II](./anal2/ea/07.md)
+  - [8. Többváltozós függvénytan I ](./anal2/ea/08.md)
 - [Gyakorlat](./anal2/gyak/about.md)
   - [1. Gyakorlat](./anal2/gyak/01.md)
   - [2. Gyakorlat](./anal2/gyak/02.md)
