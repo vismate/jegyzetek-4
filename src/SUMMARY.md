@@ -61,6 +61,7 @@
   - [6. Gyakorlat](./anal2/gyak/06.md)
   - [7. Gyakorlat - elmaradt, pótlás várható](./elmaradt.md)
   - [8. Gyakorlat](./anal2/gyak/08.md)
+  - [9. Gyakorlat](./anal2/gyak/09.md)
 - [Tételbizonyítások](./anal2/biz/about.md)
   - [1. A folytonosság és a deriválhatóság kapcsolata](./anal2/biz/01.md)
   - [2. A szorzatfüggvény deriválási szabálya](./anal2/biz/02.md)
@@ -86,6 +87,7 @@
   - [6. Előadás](./os/ea/06.md)
   - [7. Előadás - elmaradt, pótlás várható](./elmaradt.md)
   - [8. Előadás - elmaradt](./elmaradt.md)
+  - [9. Előadás](./os/ea/09.md)
 - [Gyakorlat](./os/gyak/about.md)
   - [1. C bevezető](./os/gyak/01.md)
   - [2. Rendszerhívások, fájlkezelés](./os/gyak/02.md)
@@ -106,6 +108,7 @@
   - [6. Betanítási költség, túltanulás, alultanulás, neuron](./soft_deep_neural/06.md)
   - [7. Előadás - elmaradt](./elmaradt.md)
   - [8. Előadás](./soft_deep_neural/08.md)
+  - [9. Előadás](./soft_deep_neural/09.md)
 
 # Szoftvertechnológia
 - [Előadás](./softtech/ea/about.md)
@@ -117,6 +120,7 @@
   - [6. Build systems](./softtech/ea/06.md)
   - [7. Verifikáció és validáció](./softtech/ea/07.md)
   - [8. CI/CD - nincs jegyzet](./softtech/ea/08.md)
+  - [9. Test Driven Development, Clean Code - nincs jegyzet](./softtech/ea/09.md)
 - [Gyakorlat](./softtech/gyak/about.md)
   - [1. Gyakorlat](./softtech/gyak/01.md)
   - [2. Gyakorlat](./softtech/gyak/02.md)
@@ -126,6 +130,7 @@
   - [6. Gyakorlat](./softtech/gyak/06.md)
   - [7. Gyakorlat - elmaradt](./elmaradt.md)
   - [8. Gyakorlat](./softtech/gyak/08.md)
+  - [9. Gyakorlat](./softtech/gyak/09.md)
 
 # Számítógépes grafika
 - [Előadás](./cg/ea/about.md)
@@ -144,3 +149,4 @@
   - [6. Gyakorlat](./cg/gyak/06.md)
   - [7. Gyakorlat - elmaradt](./elmaradt.md)
   - [8. Gyakorlat](./cg/gyak/08.md)
+  - [9. Gyakorlat](./cg/gyak/09.md)
