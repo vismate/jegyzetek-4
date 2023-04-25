@@ -12,6 +12,7 @@
   - [6. Maradéknyelv, myhill-nerode tétel, minimális-, redukált-, faktor automata,](./szamelm1/ea/06.md)
   - [7. Nyelvi egyenletrendszerek megoldása, általánosított automata](./szamelm1/ea/07.md)
   - [8. Környezetfüggetlen grammatikák, Chomsky normálforma, CYK algoritmus](./szamelm1/ea/08.md)
+  - [9. Veremautomaták](./szamelm1/ea/09.md)
 - [Gyakorlat](./szamelm1/gyak/about.md)
   - [1. Nyelvek](./szamelm1/gyak/01.md)
   - [2. Grammatikák I](./szamelm1/gyak/02.md)
@@ -20,7 +21,7 @@
   - [5. Grammatikák III, reguláris kifejezések](./szamelm1/gyak/05.md)
   - [6. Véges automaták](./szamelm1/gyak/06.md)
   - [7. Zárthelyi](./szamelm1/gyak/07.md)
-  - [8. ZH megoldás, grammatikák visszamenőleg, általános automaták](./szamelm/gyak/08.md)
+  - [8. ZH megoldás, grammatikák visszamenőleg, általános automaták](./szamelm1/gyak/08.md)
 
 # Adatbázisok I.
 - [Előadás](./adatb1/ea/about.md)
@@ -32,6 +33,7 @@
   - [6. Adatbázis tervezés II](./adatb1/ea/06.md)
   - [7. Többértékű függőségek, egyed kapcsolat modell](./adatb1/ea/07.md)
   - [8. Egyed-kapcsolat modell befejezése, objektum-relációs adatbázisok elkezdése](./adatb1/ea/08.md)
+  - [9. Objektum-relációs adatbázisok](./adatb1/ea/09.md)
 - [Gyakorlat](./adatb1/gyak/about.md)
   - [1. Gyakorlat](./adatb1/gyak/01.md)
   - [2. Gyakorlat](./adatb1/gyak/02.md)
@@ -41,6 +43,7 @@
   - [6. Gyakorlat](./adatb1/gyak/06.md)
   - [7. Gyakorlat](./adatb1/gyak/07.md)
   - [8. Gyakorlat - ZH](./adatb1/gyak/08.md)
+  - [9. Gyakorlat](./adatb1/gyak/09.md)
 
 # Analízis II.
 - [Előadás](./anal2/ea/about.md)
@@ -52,6 +55,7 @@
   - [6. Integrálszámítás I](./anal2/ea/06.md)
   - [7. Integrálszámítás II](./anal2/ea/07.md)
   - [8. Többváltozós függvénytan I ](./anal2/ea/08.md)
+  - [9. Többváltozós függvények deriválása I](./anal2/ea/09.md)
 - [Gyakorlat](./anal2/gyak/about.md)
   - [1. Gyakorlat](./anal2/gyak/01.md)
   - [2. Gyakorlat](./anal2/gyak/02.md)
@@ -97,6 +101,7 @@
   - [6. Messages, shared memory, semafor](./os/gyak/06.md)
   - [7. Beadandó bemutatás](./os/gyak/07.md)
   - [8. Message queue](./os/gyak/08.md)
+  - [9. Feladatmegoldás](./os/gyak/09.md)
 
 # Szoftver mély neuronhálók alkalmazásához
 - [Előadás](./soft_deep_neural/about.md)
