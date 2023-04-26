@@ -22,6 +22,7 @@
   - [6. Véges automaták](./szamelm1/gyak/06.md)
   - [7. Zárthelyi](./szamelm1/gyak/07.md)
   - [8. ZH megoldás, grammatikák visszamenőleg, általános automaták](./szamelm1/gyak/08.md)
+  - [9. Általános automaták, Chomsky normálforma, CYK algoritmus](./szamelm1/gyak/09.md)
 
 # Adatbázisok I.
 - [Előadás](./adatb1/ea/about.md)
