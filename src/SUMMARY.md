@@ -13,6 +13,7 @@
   - [7. Nyelvi egyenletrendszerek megoldása, általánosított automata](./szamelm1/ea/07.md)
   - [8. Környezetfüggetlen grammatikák, Chomsky normálforma, CYK algoritmus](./szamelm1/ea/08.md)
   - [9. Veremautomaták](./szamelm1/ea/09.md)
+  - [10. Levezetési fa, Nagy Bar-Hillel lemma - nincs jegyzet](./szamelm1/ea/10.md)
 - [Gyakorlat](./szamelm1/gyak/about.md)
   - [1. Nyelvek](./szamelm1/gyak/01.md)
   - [2. Grammatikák I](./szamelm1/gyak/02.md)
@@ -35,6 +36,7 @@
   - [7. Többértékű függőségek, egyed kapcsolat modell](./adatb1/ea/07.md)
   - [8. Egyed-kapcsolat modell befejezése, objektum-relációs adatbázisok elkezdése](./adatb1/ea/08.md)
   - [9. Objektum-relációs adatbázisok](./adatb1/ea/09.md)
+  - [10. XML séma](./adatb1/ea/10.md)
 - [Gyakorlat](./adatb1/gyak/about.md)
   - [1. Gyakorlat](./adatb1/gyak/01.md)
   - [2. Gyakorlat](./adatb1/gyak/02.md)
@@ -45,6 +47,7 @@
   - [7. Gyakorlat](./adatb1/gyak/07.md)
   - [8. Gyakorlat - ZH](./adatb1/gyak/08.md)
   - [9. Gyakorlat](./adatb1/gyak/09.md)
+  - [10. Gyakorlat](./adatb1/gyak/10.md)
 
 # Analízis II.
 - [Előadás](./anal2/ea/about.md)
@@ -57,6 +60,7 @@
   - [7. Integrálszámítás II](./anal2/ea/07.md)
   - [8. Többváltozós függvénytan I ](./anal2/ea/08.md)
   - [9. Többváltozós függvények deriválása I](./anal2/ea/09.md)
+  - [10. Többváltozós függvények deriválása II](./anal2/ea/10.md)
 - [Gyakorlat](./anal2/gyak/about.md)
   - [1. Gyakorlat](./anal2/gyak/01.md)
   - [2. Gyakorlat](./anal2/gyak/02.md)
@@ -105,6 +109,7 @@
   - [7. Beadandó bemutatás](./os/gyak/07.md)
   - [8. Message queue](./os/gyak/08.md)
   - [9. Feladatmegoldás](./os/gyak/09.md)
+  - [10. Feladatmegoldás](./os/gyak/10.md)
 
 # Szoftver mély neuronhálók alkalmazásához
 - [Előadás](./soft_deep_neural/about.md)
