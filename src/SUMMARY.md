@@ -73,6 +73,7 @@
   - [8. Gyakorlat](./anal2/gyak/08.md)
   - [9. Gyakorlat](./anal2/gyak/09.md)
   - [10. Gyakorlat - elmaradt, pótlás várható](./elmaradt)
+  - [11. Gyakorlat](./anal2/gyak/11.md)
 - [Tételbizonyítások](./anal2/biz/about.md)
   - [1. A folytonosság és a deriválhatóság kapcsolata](./anal2/biz/01.md)
   - [2. A szorzatfüggvény deriválási szabálya](./anal2/biz/02.md)
@@ -100,6 +101,7 @@
   - [8. Előadás - elmaradt](./elmaradt.md)
   - [9. Előadás](./os/ea/09.md)
   - [10. Előadás - elmaradt](./elmaradt.md)
+  - [11. Előadás - ZH](./os/ea/11.md)
 - [Gyakorlat](./os/gyak/about.md)
   - [1. C bevezető](./os/gyak/01.md)
   - [2. Rendszerhívások, fájlkezelés](./os/gyak/02.md)
@@ -124,6 +126,7 @@
   - [8. Előadás](./soft_deep_neural/08.md)
   - [9. Előadás](./soft_deep_neural/09.md)
   - [10. Előadás - elmaradt](./elmaradt.md)
+  - [11. Túltanulás elkerülése, konvolúciós hálózatok](./soft_deep_neural/11.md)
 
 # Szoftvertechnológia
 - [Előadás](./softtech/ea/about.md)
@@ -146,7 +149,8 @@
   - [7. Gyakorlat - elmaradt](./elmaradt.md)
   - [8. Gyakorlat](./softtech/gyak/08.md)
   - [9. Gyakorlat](./softtech/gyak/09.md)
-  - [10. Gyakorlat - elnaradt](./elmaradt.md)
+  - [10. Gyakorlat - elmaradt](./elmaradt.md)
+  - [11. Gyakorlat - elmaradt](./elmaradt.md)
 
 # Számítógépes grafika
 - [Előadás](./cg/ea/about.md)
@@ -167,3 +171,4 @@
   - [8. Gyakorlat](./cg/gyak/08.md)
   - [9. Gyakorlat](./cg/gyak/09.md)
   - [10. Gyakorlat - elmaradt](./elmaradt.md)
+  - [11. Gyakorlat](./cg/gyak/11.md)
