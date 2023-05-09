@@ -10,6 +10,7 @@
 - Írásbeli vizsga
   - max 60p (20p igaz-hamis, 20p rövid válasz, 20p hosszabb válasz)
   - min ?
+- Elővizsga: nem kötelező
 
 ## Források
 - [Canvas](https://canvas.elte.hu/courses/35225)
