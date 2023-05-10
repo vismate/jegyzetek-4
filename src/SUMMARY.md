@@ -26,6 +26,7 @@
   - [8. ZH megoldás, grammatikák visszamenőleg, általános automaták](./szamelm1/gyak/08.md)
   - [9. Általános automaták, Chomsky normálforma, CYK algoritmus](./szamelm1/gyak/09.md)
   - [10. Veremautomaták](./szamelm1/gyak/10.md)
+  - [11. Gyakorlat - nincs jegyzet](./szamelm1/gyak/11.md)
 
 # Adatbázisok I.
 - [Előadás](./adatb1/ea/about.md)
@@ -91,6 +92,19 @@
   - [11. A deriválhatóság ekvivalens átfogalmazása lineáris közelítéssel](./anal2/biz/11.md)
   - [12. A Taylor-formula a Lagrange-féle maradéktaggal](./anal2/biz/12.md)
   - [13. Elégséges feltétel függvények Taylor-sorral történő előállítására](./anal2/biz/13.md)
+  - [14. A határozatlan integrál linearitása](./anal2/biz/14.md)
+  - [15. A parciális integrálás szabálya](./anal2/biz/15.md)
+  - [16. A második helyettesítési szabály](./anal2/biz/16.md)
+  - [17. Az integrálfüggvény folytonossága](./anal2/biz/17.md)
+  - [18. Az integrálfüggvény deriválhatósága](./anal2/biz/18.md)
+  - [19. A Newton-Leibniz-formula](./anal2/biz/19.md)
+  - [20. Egy vektorsorozat és koordinátasorozatai konvergenciájának kapcsolata](./anal2/biz/20.md)
+  - [21. A deriváltmátrix egyértelműsége](./anal2/biz/21.md)
+  - [22. A deriváltmátrix előállítása](./anal2/biz/22.md)
+  - [23. A totális- és az iránymenti derivált kapcsolata](./anal2/biz/23.md)
+  - [24. R^n → R  típusú függvényekre vonatkozó elsőrendű szükséges feltétel a lokális szélsőértékre](./anal2/biz/24.md)
+  - [25. R^n → R  típusú függvényekre vonatkozó másodrensű elégséges feltétel a lokális szélsőértékre](./anal2/biz/25.md)
+  - [26. R^n → R típusú függvényekre vonatkozo másodrendű szükséges feltétel a lokális szélsőértékre](./anal2/biz/26.md)
 
 # Operációs rendszerek
 - [Előadás](./os/ea/about.md)

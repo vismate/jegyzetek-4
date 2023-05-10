@@ -16,6 +16,20 @@
 13. [Elégséges feltétel függvények Taylor-sorral történő előállítása](./13.md)
 
 ## Bizonyítással kért tételek II.
+14. [A határozatlan integrál linearitása](./14.md)
+15. [A parciális integrálás szabálya](./15.md)
+16. [A második helyettesítési szabály](./16.md)
+17. [Az integrálfüggvény folytonossága](./17.md)
+18. [Az integrálfüggvény deriválhatósága](./18.md)
+19. [A Newton-Leibniz-formula](./19.md)
+20. [Egy vektorsorozat és koordinátasorozatai konvergenciájának kapcsolata](./20.md)
+21. [A deriváltmátrix egyértelműsége](./21.md)
+22. [A deriváltmátrix előállítása](./22.md)
+23. [A totális- és az iránymenti derivált kapcsolata](./23.md)
+24. [$\R^n \to \R$ típusú függvényekre vonatkozó elsőrendű szükséges feltétel a lokális szélsőértékre](./24.md)
+25. [$\R^n \to \R$ típusú függvényekre vonatkozó másodrensű elégséges feltétel a lokális szélsőértékre](./25.md)
+26. [$\R^n \to \R$ típusú függvényekre vonatkozo másodrendű szükséges feltétel a lokális szélsőértékre](./26.md)
 
 ## Források
 - [1.Zh bizonyítással kért tételek - pdf](https://numanal.inf.elte.hu/~szili/Oktatas/An_II_F_2023_tavasz/AnIIF-1.Zh-Tetelek.pdf)
+- [2.Zh bizonyítással kért tételek - pdf](https://numanal.inf.elte.hu/~szili/Oktatas/An_II_F_2023_tavasz/AnIIF-2.Zh-Tetelek.pdf)
