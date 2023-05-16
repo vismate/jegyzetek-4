@@ -15,6 +15,7 @@
   - [9. Veremautomaták](./szamelm1/ea/09.md)
   - [10. Levezetési fa, Nagy Bar-Hillel lemma - nincs jegyzet](./szamelm1/ea/10.md)
   - [11. Környezetfüggő grammatikák](./szamelm1/ea/11.md)
+  - [12. Előadás - nincs jegyzet](./szamelm1/ea/12.md)
 - [Gyakorlat](./szamelm1/gyak/about.md)
   - [1. Nyelvek](./szamelm1/gyak/01.md)
   - [2. Grammatikák I](./szamelm1/gyak/02.md)
@@ -41,6 +42,7 @@
   - [9. Objektum-relációs adatbázisok](./adatb1/ea/09.md)
   - [10. XML séma](./adatb1/ea/10.md)
   - [11. XML lekérdezőnyelvek](./adatb1/ea/11.md)
+  - [12. Extra - Analitikus adatfeldolgozás](./adatb1/ea/12.md)
 - [Gyakorlat](./adatb1/gyak/about.md)
   - [1. Gyakorlat](./adatb1/gyak/01.md)
   - [2. Gyakorlat](./adatb1/gyak/02.md)
@@ -52,6 +54,8 @@
   - [8. Gyakorlat - ZH](./adatb1/gyak/08.md)
   - [9. Gyakorlat](./adatb1/gyak/09.md)
   - [10. Gyakorlat](./adatb1/gyak/10.md)
+  - [11. Gyakorlat - elmaradt](./elmaradt.md)
+  - [12. Gyakorlat](./adatb1/gyak/12.md)
 
 # Analízis II.
 - [Előadás](./anal2/ea/about.md)
@@ -78,6 +82,7 @@
   - [9. Gyakorlat](./anal2/gyak/09.md)
   - [10. Gyakorlat - elmaradt, pótlás várható](./elmaradt)
   - [11. Gyakorlat](./anal2/gyak/11.md)
+  - [12. Gyakorlat - nincs jegyzet](./anal2/gyak/12.md)
 - [Tételbizonyítások](./anal2/biz/about.md)
   - [1. A folytonosság és a deriválhatóság kapcsolata](./anal2/biz/01.md)
   - [2. A szorzatfüggvény deriválási szabálya](./anal2/biz/02.md)
@@ -119,6 +124,7 @@
   - [9. Előadás](./os/ea/09.md)
   - [10. Előadás - elmaradt](./elmaradt.md)
   - [11. Előadás - ZH](./os/ea/11.md)
+  - [12. Előadás - ZH](./os/ea/12.md)
 - [Gyakorlat](./os/gyak/about.md)
   - [1. C bevezető](./os/gyak/01.md)
   - [2. Rendszerhívások, fájlkezelés](./os/gyak/02.md)
@@ -131,6 +137,7 @@
   - [9. Feladatmegoldás](./os/gyak/09.md)
   - [10. Feladatmegoldás](./os/gyak/10.md)
   - [11. Feladatmegoldás](./os/gyak/11.md)
+  - [12. Beadandó bemutatás](./os/gyak/12.md)
 
 # Szoftver mély neuronhálók alkalmazásához
 - [Előadás](./soft_deep_neural/about.md)
@@ -145,6 +152,7 @@
   - [9. Előadás](./soft_deep_neural/09.md)
   - [10. Előadás - elmaradt](./elmaradt.md)
   - [11. Túltanulás elkerülése, konvolúciós hálózatok](./soft_deep_neural/11.md)
+  - [12. Előadás - nincs jegyzet](./soft_deep_neural/12.md)
 
 # Szoftvertechnológia
 - [Előadás](./softtech/ea/about.md)
@@ -159,6 +167,7 @@
   - [9. Test Driven Development, Clean Code - nincs jegyzet](./softtech/ea/09.md)
   - [10. Szálak - nincs jegyzet](./softtech/ea/10.md)
   - [11. Tervminták - nincs jegyzet](./softtech/ea/11.md)
+  - [12. Networking - nincs jegyzet](./softtech/ea/12.md)
 - [Gyakorlat](./softtech/gyak/about.md)
   - [1. Gyakorlat](./softtech/gyak/01.md)
   - [2. Gyakorlat](./softtech/gyak/02.md)
@@ -171,6 +180,7 @@
   - [9. Gyakorlat](./softtech/gyak/09.md)
   - [10. Gyakorlat - elmaradt](./elmaradt.md)
   - [11. Gyakorlat - elmaradt](./elmaradt.md)
+  - [12. Gyakorlat](./softtech/gyak/12.md)
 
 # Számítógépes grafika
 - [Előadás](./cg/ea/about.md)
@@ -192,3 +202,4 @@
   - [9. Gyakorlat](./cg/gyak/09.md)
   - [10. Gyakorlat - elmaradt](./elmaradt.md)
   - [11. Gyakorlat](./cg/gyak/11.md)
+  - [12. Gyakorlat](./cg/gyak/12.md)
