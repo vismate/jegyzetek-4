@@ -109,7 +109,7 @@
   - [23. A totális- és az iránymenti derivált kapcsolata](./anal2/biz/23.md)
   - [24. R^n → R  típusú függvényekre vonatkozó elsőrendű szükséges feltétel a lokális szélsőértékre](./anal2/biz/24.md)
   - [25. R^n → R  típusú függvényekre vonatkozó másodrensű elégséges feltétel a lokális szélsőértékre](./anal2/biz/25.md)
-  - [26. R^n → R típusú függvényekre vonatkozo másodrendű szükséges feltétel a lokális szélsőértékre](./anal2/biz/26.md)
+  - [26. R^n → R típusú függvényekre vonatkozó másodrendű szükséges feltétel a lokális szélsőértékre](./anal2/biz/26.md)
 
 # Operációs rendszerek
 - [Előadás](./os/ea/about.md)

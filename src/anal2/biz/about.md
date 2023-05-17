@@ -28,7 +28,7 @@
 23. [A totális- és az iránymenti derivált kapcsolata](./23.md)
 24. [$\R^n \to \R$ típusú függvényekre vonatkozó elsőrendű szükséges feltétel a lokális szélsőértékre](./24.md)
 25. [$\R^n \to \R$ típusú függvényekre vonatkozó másodrensű elégséges feltétel a lokális szélsőértékre](./25.md)
-26. [$\R^n \to \R$ típusú függvényekre vonatkozo másodrendű szükséges feltétel a lokális szélsőértékre](./26.md)
+26. [$\R^n \to \R$ típusú függvényekre vonatkozó másodrendű szükséges feltétel a lokális szélsőértékre](./26.md)
 
 ## Források
 - [1.Zh bizonyítással kért tételek - pdf](https://numanal.inf.elte.hu/~szili/Oktatas/An_II_F_2023_tavasz/AnIIF-1.Zh-Tetelek.pdf)
