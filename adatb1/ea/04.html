@@ -1,0 +1,490 @@
+<!DOCTYPE HTML>
+<html lang="hu" class="sidebar-visible no-js ayu">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>4. Megszorítások, tranzakciók, nézettáblák, indexek, jogosultságok - 4. félévi jegyzetek</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../src/image_style.css">
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "ayu";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('ayu')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../../about.html">A jegyzetről</a></li><li class="chapter-item expanded affix "><li class="part-title">A számításelmélet alapjai I.</li><li class="chapter-item expanded "><a href="../../szamelm1/ea/about.html">Előadás</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../szamelm1/ea/01.html">1. Alapfogalmak, nyelvek, grammatikák</a></li><li class="chapter-item expanded "><a href="../../szamelm1/ea/02.html">2. Grammatikák csoportosítása</a></li><li class="chapter-item expanded "><a href="../../szamelm1/ea/03.html">3. Lineáris grammatikák, 3-típusú grammatikák normálformája, reguláris kifelyezések</a></li><li class="chapter-item expanded "><a href="../../szamelm1/ea/04.html">4. Véges automaták</a></li><li class="chapter-item expanded "><a href="../../szamelm1/ea/05.html">5. Véges automata determinizálása, összefüggő automaták, algoritmikus eldöntési probléma</a></li><li class="chapter-item expanded "><a href="../../szamelm1/ea/06.html">6. Maradéknyelv, myhill-nerode tétel, minimális-, redukált-, faktor automata,</a></li><li class="chapter-item expanded "><a href="../../szamelm1/ea/07.html">7. Nyelvi egyenletrendszerek megoldása, általánosított automata</a></li><li class="chapter-item expanded "><a href="../../szamelm1/ea/08.html">8. Környezetfüggetlen grammatikák, Chomsky normálforma, CYK algoritmus</a></li><li class="chapter-item expanded "><a href="../../szamelm1/ea/09.html">9. Veremautomaták</a></li><li class="chapter-item expanded "><a href="../../szamelm1/ea/10.html">10. Levezetési fa, Nagy Bar-Hillel lemma - nincs jegyzet</a></li><li class="chapter-item expanded "><a href="../../szamelm1/ea/11.html">11. Környezetfüggő grammatikák</a></li><li class="chapter-item expanded "><a href="../../szamelm1/ea/12.html">12. Előadás - nincs jegyzet</a></li></ol></li><li class="chapter-item expanded "><a href="../../szamelm1/gyak/about.html">Gyakorlat</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../szamelm1/gyak/01.html">1. Nyelvek</a></li><li class="chapter-item expanded "><a href="../../szamelm1/gyak/02.html">2. Grammatikák I</a></li><li class="chapter-item expanded "><a href="../../elmaradt.html">3. Gyakorlat - elmaradt</a></li><li class="chapter-item expanded "><a href="../../szamelm1/gyak/04.html">4. Grammatikák II</a></li><li class="chapter-item expanded "><a href="../../szamelm1/gyak/05.html">5. Grammatikák III, reguláris kifejezések</a></li><li class="chapter-item expanded "><a href="../../szamelm1/gyak/06.html">6. Véges automaták</a></li><li class="chapter-item expanded "><a href="../../szamelm1/gyak/07.html">7. Zárthelyi</a></li><li class="chapter-item expanded "><a href="../../szamelm1/gyak/08.html">8. ZH megoldás, grammatikák visszamenőleg, általános automaták</a></li><li class="chapter-item expanded "><a href="../../szamelm1/gyak/09.html">9. Általános automaták, Chomsky normálforma, CYK algoritmus</a></li><li class="chapter-item expanded "><a href="../../szamelm1/gyak/10.html">10. Veremautomaták</a></li><li class="chapter-item expanded "><a href="../../szamelm1/gyak/11.html">11. Gyakorlat - nincs jegyzet</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Adatbázisok I.</li><li class="chapter-item expanded "><a href="../../adatb1/ea/about.html">Előadás</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../adatb1/ea/01.html">1. Bevezetés és relációs adatmodell</a></li><li class="chapter-item expanded "><a href="../../adatb1/ea/02.html">2. Relációs algebra lekérdezések optimizációja és bevezetés az SQL-be</a></li><li class="chapter-item expanded "><a href="../../adatb1/ea/03.html">3. Bevezetés az SQL-be, haladó SQL</a></li><li class="chapter-item expanded "><a href="../../adatb1/ea/04.html" class="active">4. Megszorítások, tranzakciók, nézettáblák, indexek, jogosultságok</a></li><li class="chapter-item expanded "><a href="../../adatb1/ea/05.html">5. Adatbázis tervezés I</a></li><li class="chapter-item expanded "><a href="../../adatb1/ea/06.html">6. Adatbázis tervezés II</a></li><li class="chapter-item expanded "><a href="../../adatb1/ea/07.html">7. Többértékű függőségek, egyed kapcsolat modell</a></li><li class="chapter-item expanded "><a href="../../adatb1/ea/08.html">8. Egyed-kapcsolat modell befejezése, objektum-relációs adatbázisok elkezdése</a></li><li class="chapter-item expanded "><a href="../../adatb1/ea/09.html">9. Objektum-relációs adatbázisok</a></li><li class="chapter-item expanded "><a href="../../adatb1/ea/10.html">10. XML séma</a></li><li class="chapter-item expanded "><a href="../../adatb1/ea/11.html">11. XML lekérdezőnyelvek</a></li><li class="chapter-item expanded "><a href="../../adatb1/ea/12.html">12. Extra - Analitikus adatfeldolgozás</a></li></ol></li><li class="chapter-item expanded "><a href="../../adatb1/gyak/about.html">Gyakorlat</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../adatb1/gyak/01.html">1. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../adatb1/gyak/02.html">2. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../adatb1/gyak/03.html">3. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../adatb1/gyak/04.html">4. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../adatb1/gyak/05.html">5. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../adatb1/gyak/06.html">6. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../adatb1/gyak/07.html">7. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../adatb1/gyak/08.html">8. Gyakorlat - ZH</a></li><li class="chapter-item expanded "><a href="../../adatb1/gyak/09.html">9. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../adatb1/gyak/10.html">10. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../elmaradt.html">11. Gyakorlat - elmaradt</a></li><li class="chapter-item expanded "><a href="../../adatb1/gyak/12.html">12. Gyakorlat</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Analízis II.</li><li class="chapter-item expanded "><a href="../../anal2/ea/about.html">Előadás</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../anal2/ea/01.html">1. Differenciálszámítás I.</a></li><li class="chapter-item expanded "><a href="../../anal2/ea/02.html">2. Differenciálszámítás II. és függvénytulajdonságok kapcsolata a deriválttal I.</a></li><li class="chapter-item expanded "><a href="../../anal2/ea/03.html">3. Függvénytulajdonságok kapcsolata a deriválttal II.</a></li><li class="chapter-item expanded "><a href="../../anal2/ea/04.html">4. Speciális függvények</a></li><li class="chapter-item expanded "><a href="../../anal2/ea/05.html">5. Taylor polinomok és Taylor sorok</a></li><li class="chapter-item expanded "><a href="../../anal2/ea/06.html">6. Integrálszámítás I</a></li><li class="chapter-item expanded "><a href="../../anal2/ea/07.html">7. Integrálszámítás II</a></li><li class="chapter-item expanded "><a href="../../anal2/ea/08.html">8. Többváltozós függvénytan I </a></li><li class="chapter-item expanded "><a href="../../anal2/ea/09.html">9. Többváltozós függvények deriválása I</a></li><li class="chapter-item expanded "><a href="../../anal2/ea/10.html">10. Többváltozós függvények deriválása II</a></li><li class="chapter-item expanded "><a href="../../anal2/ea/11.html">11. Többváltozós függvények deriválása III</a></li></ol></li><li class="chapter-item expanded "><a href="../../anal2/gyak/about.html">Gyakorlat</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../anal2/gyak/01.html">1. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../anal2/gyak/02.html">2. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../anal2/gyak/03.html">3. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../anal2/gyak/04.html">4. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../anal2/gyak/05.html">5. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../anal2/gyak/06.html">6. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../elmaradt.html">7. Gyakorlat - elmaradt, pótlás várható</a></li><li class="chapter-item expanded "><a href="../../anal2/gyak/08.html">8. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../anal2/gyak/09.html">9. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../elmaradt.html">10. Gyakorlat - elmaradt, pótlás várható</a></li><li class="chapter-item expanded "><a href="../../anal2/gyak/11.html">11. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../anal2/gyak/12.html">12. Gyakorlat - nincs jegyzet</a></li></ol></li><li class="chapter-item expanded "><a href="../../anal2/biz/about.html">Tételbizonyítások</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../anal2/biz/01.html">1. A folytonosság és a deriválhatóság kapcsolata</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/02.html">2. A szorzatfüggvény deriválási szabálya</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/03.html">3. A hányadosfüggvény deriválási szabálya</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/04.html">4. Az inverz függvény deriválási szabálya</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/05.html">5. A lokális szélsőértékre vonatkozó elsőrendű szükséges feltétel</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/06.html">6. A Rolle-féle középértéktétel</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/07.html">7. A Cauchy-féle középértéktétel</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/08.html">8. A monotonitás és a derivált kapcsolata</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/09.html">9. A konvexitás és a kétszeres derivált kapcsolata</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/10.html">10. A L'Hospital-szabály a 0/0 esetben</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/11.html">11. A deriválhatóság ekvivalens átfogalmazása lineáris közelítéssel</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/12.html">12. A Taylor-formula a Lagrange-féle maradéktaggal</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/13.html">13. Elégséges feltétel függvények Taylor-sorral történő előállítására</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/14.html">14. A határozatlan integrál linearitása</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/15.html">15. A parciális integrálás szabálya</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/16.html">16. A második helyettesítési szabály</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/17.html">17. Az integrálfüggvény folytonossága</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/18.html">18. Az integrálfüggvény deriválhatósága</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/19.html">19. A Newton-Leibniz-formula</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/20.html">20. Egy vektorsorozat és koordinátasorozatai konvergenciájának kapcsolata</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/21.html">21. A deriváltmátrix egyértelműsége</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/22.html">22. A deriváltmátrix előállítása</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/23.html">23. A totális- és az iránymenti derivált kapcsolata</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/24.html">24. R^n → R  típusú függvényekre vonatkozó elsőrendű szükséges feltétel a lokális szélsőértékre</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/25.html">25. R^n → R  típusú függvényekre vonatkozó másodrensű elégséges feltétel a lokális szélsőértékre</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/26.html">26. R^n → R típusú függvényekre vonatkozó másodrendű szükséges feltétel a lokális szélsőértékre</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Operációs rendszerek</li><li class="chapter-item expanded "><a href="../../os/ea/about.html">Előadás</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../os/ea/01.html">1. Előadás</a></li><li class="chapter-item expanded "><a href="../../os/ea/02.html">2. Előadás</a></li><li class="chapter-item expanded "><a href="../../os/ea/03.html">3. Előadás</a></li><li class="chapter-item expanded "><a href="../../os/ea/04.html">4. Előadás</a></li><li class="chapter-item expanded "><a href="../../os/ea/05.html">5. Előadás</a></li><li class="chapter-item expanded "><a href="../../os/ea/06.html">6. Előadás</a></li><li class="chapter-item expanded "><a href="../../elmaradt.html">7. Előadás - elmaradt, pótlás várható</a></li><li class="chapter-item expanded "><a href="../../elmaradt.html">8. Előadás - elmaradt</a></li><li class="chapter-item expanded "><a href="../../os/ea/09.html">9. Előadás</a></li><li class="chapter-item expanded "><a href="../../elmaradt.html">10. Előadás - elmaradt</a></li><li class="chapter-item expanded "><a href="../../os/ea/11.html">11. Előadás - ZH</a></li><li class="chapter-item expanded "><a href="../../os/ea/12.html">12. Előadás - ZH</a></li></ol></li><li class="chapter-item expanded "><a href="../../os/gyak/about.html">Gyakorlat</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../os/gyak/01.html">1. C bevezető</a></li><li class="chapter-item expanded "><a href="../../os/gyak/02.html">2. Rendszerhívások, fájlkezelés</a></li><li class="chapter-item expanded "><a href="../../os/gyak/03.html">3. Processzkezelés</a></li><li class="chapter-item expanded "><a href="../../os/gyak/04.html">4. Signal</a></li><li class="chapter-item expanded "><a href="../../os/gyak/05.html">5. Pipe</a></li><li class="chapter-item expanded "><a href="../../os/gyak/06.html">6. Messages, shared memory, semafor</a></li><li class="chapter-item expanded "><a href="../../os/gyak/07.html">7. Beadandó bemutatás</a></li><li class="chapter-item expanded "><a href="../../os/gyak/08.html">8. Message queue</a></li><li class="chapter-item expanded "><a href="../../os/gyak/09.html">9. Feladatmegoldás</a></li><li class="chapter-item expanded "><a href="../../os/gyak/10.html">10. Feladatmegoldás</a></li><li class="chapter-item expanded "><a href="../../os/gyak/11.html">11. Feladatmegoldás</a></li><li class="chapter-item expanded "><a href="../../os/gyak/12.html">12. Beadandó bemutatás</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Szoftver mély neuronhálók alkalmazásához</li><li class="chapter-item expanded "><a href="../../soft_deep_neural/about.html">Előadás</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../soft_deep_neural/01.html">1. Bevezetés a gépi tanulás feladataiba és fajtáiba</a></li><li class="chapter-item expanded "><a href="../../soft_deep_neural/02.html">2. Regressziós technikák</a></li><li class="chapter-item expanded "><a href="../../soft_deep_neural/03.html">3. Többváltozós regresszió, klasszifikáció, logisztikus regresszió</a></li><li class="chapter-item expanded "><a href="../../soft_deep_neural/04.html">4. Python, numpy</a></li><li class="chapter-item expanded "><a href="../../soft_deep_neural/05.html">5. Feladatmegoldások</a></li><li class="chapter-item expanded "><a href="../../soft_deep_neural/06.html">6. Betanítási költség, túltanulás, alultanulás, neuron</a></li><li class="chapter-item expanded "><a href="../../elmaradt.html">7. Előadás - elmaradt</a></li><li class="chapter-item expanded "><a href="../../soft_deep_neural/08.html">8. Előadás</a></li><li class="chapter-item expanded "><a href="../../soft_deep_neural/09.html">9. Előadás</a></li><li class="chapter-item expanded "><a href="../../elmaradt.html">10. Előadás - elmaradt</a></li><li class="chapter-item expanded "><a href="../../soft_deep_neural/11.html">11. Túltanulás elkerülése, konvolúciós hálózatok</a></li><li class="chapter-item expanded "><a href="../../soft_deep_neural/12.html">12. Előadás - nincs jegyzet</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Szoftvertechnológia</li><li class="chapter-item expanded "><a href="../../softtech/ea/about.html">Előadás</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../softtech/ea/01.html">1. Szoftverfejlesztési folyamat</a></li><li class="chapter-item expanded "><a href="../../softtech/ea/02.html">2. Specifikáció és követelménymenedzsment</a></li><li class="chapter-item expanded "><a href="../../softtech/ea/03.html">3. Objektumorientált tervezés</a></li><li class="chapter-item expanded "><a href="../../softtech/ea/04.html">4. Objektumorientált tervezési szempontok és minták</a></li><li class="chapter-item expanded "><a href="../../softtech/ea/05.html">5. Projekteszközök, verziókezelés</a></li><li class="chapter-item expanded "><a href="../../softtech/ea/06.html">6. Build systems</a></li><li class="chapter-item expanded "><a href="../../softtech/ea/07.html">7. Verifikáció és validáció</a></li><li class="chapter-item expanded "><a href="../../softtech/ea/08.html">8. CI/CD - nincs jegyzet</a></li><li class="chapter-item expanded "><a href="../../softtech/ea/09.html">9. Test Driven Development, Clean Code - nincs jegyzet</a></li><li class="chapter-item expanded "><a href="../../softtech/ea/10.html">10. Szálak - nincs jegyzet</a></li><li class="chapter-item expanded "><a href="../../softtech/ea/11.html">11. Tervminták - nincs jegyzet</a></li><li class="chapter-item expanded "><a href="../../softtech/ea/12.html">12. Networking - nincs jegyzet</a></li></ol></li><li class="chapter-item expanded "><a href="../../softtech/gyak/about.html">Gyakorlat</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../softtech/gyak/01.html">1. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../softtech/gyak/02.html">2. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../softtech/gyak/03.html">3. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../softtech/gyak/04.html">4. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../softtech/gyak/05.html">5. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../softtech/gyak/06.html">6. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../elmaradt.html">7. Gyakorlat - elmaradt</a></li><li class="chapter-item expanded "><a href="../../softtech/gyak/08.html">8. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../softtech/gyak/09.html">9. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../elmaradt.html">10. Gyakorlat - elmaradt</a></li><li class="chapter-item expanded "><a href="../../elmaradt.html">11. Gyakorlat - elmaradt</a></li><li class="chapter-item expanded "><a href="../../softtech/gyak/12.html">12. Gyakorlat</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Számítógépes grafika</li><li class="chapter-item expanded "><a href="../../cg/ea/about.html">Előadás</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../cg/ea/01.html">1. Bevezetés a számítógépes grafikába</a></li><li class="chapter-item expanded "><a href="../../cg/ea/02.html">2. Koordináta-rendszerek, egyenesek és síkok</a></li><li class="chapter-item expanded "><a href="../../cg/ea/03.html">3. Transzformációk</a></li><li class="chapter-item expanded "><a href="../../cg/ea/04.html">4. Görbék, felületek és a fény útja</a></li><li class="chapter-item expanded "><a href="../../cg/ea/05.html">5. Raycasting</a></li><li class="chapter-item expanded "><a href="../../cg/ea/06.html">6. Fejlettebb raycasting</a></li></ol></li><li class="chapter-item expanded "><a href="../../cg/gyak/about.html">Gyakorlat</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../cg/gyak/01.html">1. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../cg/gyak/02.html">2. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../cg/gyak/03.html">3. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../cg/gyak/04.html">4. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../cg/gyak/05.html">5. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../cg/gyak/06.html">6. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../elmaradt.html">7. Gyakorlat - elmaradt</a></li><li class="chapter-item expanded "><a href="../../cg/gyak/08.html">8. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../cg/gyak/09.html">9. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../elmaradt.html">10. Gyakorlat - elmaradt</a></li><li class="chapter-item expanded "><a href="../../cg/gyak/11.html">11. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../cg/gyak/12.html">12. Gyakorlat</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">4. félévi jegyzetek</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/vismate/jegyzetek-4" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<h1 id="megszorítások-tranzakciók-nézettáblák-indexek-jogosultságok"><a class="header" href="#megszorítások-tranzakciók-nézettáblák-indexek-jogosultságok">Megszorítások, tranzakciók, nézettáblák, indexek, jogosultságok</a></h1>
+<!--toc:start-->
+<ul>
+<li><a href="#megszor%C3%ADt%C3%A1sok-tranzakci%C3%B3k-n%C3%A9zett%C3%A1bl%C3%A1k-indexek-jogosults%C3%A1gok">Megszorítások, tranzakciók, nézettáblák, indexek, jogosultságok</a>
+<ul>
+<li><a href="#megszor%C3%ADt%C3%A1sok-%C3%A9s-triggerek">Megszorítások és triggerek</a>
+<ul>
+<li><a href="#idegen-kulcsok">Idegen kulcsok</a>
+<ul>
+<li><a href="#rel%C3%A1ci%C3%B3-s%C3%A9r%C3%BCl%C3%A9s">Reláció sérülés</a></li>
+</ul>
+</li>
+<li><a href="#attrib%C3%BAtum-alap%C3%BA-ellen%C5%91rz%C3%A9sek">Attribútum alapú ellenőrzések</a></li>
+<li><a href="#sor-alap%C3%BA-megszor%C3%ADt%C3%A1sok">Sor alapú megszorítások</a></li>
+<li><a href="#glob%C3%A1lis-megszor%C3%ADt%C3%A1s">Globális megszorítás</a></li>
+<li><a href="#triggerek">Triggerek</a></li>
+</ul>
+</li>
+<li><a href="#tranzakci%C3%B3k">Tranzakciók</a>
+<ul>
+<li><a href="#tranzakci%C3%B3k-feldolgoz%C3%A1sa">Tranzakciók feldolgozása</a></li>
+<li><a href="#acid-tranzakci%C3%B3k">ACID tranzakciók</a></li>
+<li><a href="#commit">COMMIT</a></li>
+<li><a href="#rollback">ROLLBACK</a></li>
+<li><a href="#elk%C3%BCl%C3%B6n%C3%ADt%C3%A9si-szintek">Elkülönítési szintek</a></li>
+</ul>
+</li>
+<li><a href="#forr%C3%A1sok">Források</a></li>
+</ul>
+</li>
+</ul>
+<!--toc:end-->
+<h2 id="megszorítások-és-triggerek"><a class="header" href="#megszorítások-és-triggerek">Megszorítások és triggerek</a></h2>
+<p>A <strong>megszorítás</strong> adatelemek közötti kapcsolat, amelyet az AB rendszernek fent kell tartania.</p>
+<p><strong>Triggerek</strong> olyankor hajtódnak végre, amikor valamilyen esemény történik, mint pl. sorok beszúrása
+egy táblába.</p>
+<p><strong>Megszorítások típusai:</strong></p>
+<ul>
+<li><strong>Kulcsok</strong></li>
+<li><strong>Idegen kulcsok</strong>, vagy hivatkozási épség megszorítás</li>
+<li><strong>Attribútum alaú megszorítás:</strong> egy adott attribútum lehetséges értékeiről mond valamit</li>
+<li><strong>Sor alapú megszorítás:</strong> mezők közötti kapcsolat leírása</li>
+<li><strong>Globális megszortás:</strong> bármilyen SQL kifejezés</li>
+</ul>
+<h3 id="idegen-kulcsok"><a class="header" href="#idegen-kulcsok">Idegen kulcsok</a></h3>
+<p>Egy reláció attribútumainak értékei egy másik reláció értékei között is meg kell, hogy
+jelenjenek együttsesn.</p>
+<p>A <code>REFERENCES</code> kulcsszót kell használni:</p>
+<ol>
+<li>egy attribútum után</li>
+<li>A séma elemenként: </li>
+</ol>
+<pre><code class="language-SQL">FOREIGN KEY (&lt;attribútumok listája&gt;)
+REFERENCES&lt;reláció&gt;(&lt;attribútumok&gt;)
+</code></pre>
+<p>A hivatkozott attribútumoknak kulcsnak kell lenniük.</p>
+<h4 id="reláció-sérülés"><a class="header" href="#reláció-sérülés">Reláció sérülés</a></h4>
+<p>Egy idegen kulcs megszorítás <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span></span></span></span> relációról <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span></span> relációra kétféleképpen sérülhet:</p>
+<ol>
+<li>Egy <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span></span></span></span>-be történő beszúrásnál <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span></span>-ben nem szereplő értéket adunk meg</li>
+<li>Egy <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.05764em;">S</span></span></span></span>-beli törlés &quot;lógó&quot; sorokat eredményez <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.00773em;">R</span></span></span></span>-ben</li>
+</ol>
+<p><strong>Hogyan védekezhetünk?</strong></p>
+<ol>
+<li>Default</li>
+<li>Továbbgyűrűzés</li>
+<li>Set <code>NULL</code></li>
+</ol>
+<ul>
+<li>
+<p>Ha egy idegen kulcsot deklarálunk megadhatjuk a <code>SET, NULL, CASCADE</code> stratégiát is módosításra és törlésre egyaránt.</p>
+</li>
+<li>
+<p>Az idegen kulcs deklarálása után ezt kell írnunk: <code>ON[UPDATE, DELETE][SET NULL, CASCADE]</code></p>
+</li>
+<li>
+<p>Ha ezt nem adjuk meg, a default stratégia működik.</p>
+</li>
+</ul>
+<h3 id="attribútum-alapú-ellenőrzések"><a class="header" href="#attribútum-alapú-ellenőrzések">Attribútum alapú ellenőrzések</a></h3>
+<ul>
+<li>Adott oszlop értékeire vonatkozóan</li>
+<li>A <code>CHECK(&lt;feltétel&gt;)</code> hozzáadása az attribútum deklarációjához</li>
+<li>Feltételben csak az adott attribútum neve, <strong>más attribútumok csak alkérésben</strong></li>
+<li>Csak beszúrásnál és módosításnál hajtódik végre az attribútum alapú ellenőrzés</li>
+</ul>
+<h3 id="sor-alapú-megszorítások"><a class="header" href="#sor-alapú-megszorítások">Sor alapú megszorítások</a></h3>
+<ul>
+<li><code>CHECK(&lt;feltétel&gt;)</code> megszorítás a séma elemeként</li>
+<li>Feltételben tetszőleges oszlop és reláció (más relációk attribútumai csak alkérésben)</li>
+<li>Csak beszúrásnál és módosításnál ellenőrzi a rendszer</li>
+</ul>
+<h3 id="globális-megszorítás"><a class="header" href="#globális-megszorítás">Globális megszorítás</a></h3>
+<ul>
+<li>Adatbázissémához tartoznak</li>
+</ul>
+<pre><code class="language-SQL">CREATE ASSERTION &lt;név&gt;
+  CHECK(&lt;feltétel&gt;);
+</code></pre>
+<ul>
+<li>Bármilyen módosításra ellenőriz</li>
+<li><em>Egy okos rendszer felismeri, hogy mely változtatásokra szükséges ez valóban</em></li>
+</ul>
+<h3 id="triggerek"><a class="header" href="#triggerek">Triggerek</a></h3>
+<ul>
+<li>
+<p>A globális megszorításokkal sok mindent le lehet írni, de ellenőrzésük
+gondot jelenthet.</p>
+</li>
+<li>
+<p>Az attribútum- és sor-alapú megszorítások ellenőrzése egyszerűbb,de ezekkel nem tudunk mindent kifejezni.</p>
+</li>
+<li>
+<p>A triggerek esetén a felhasználó mondja meg, hogy egy megszorítás mikor kerüljön ellenőrzésre.</p>
+</li>
+<li>
+<p>A triggereket eseményenként <em>ECA</em> szabályoknak <em>(event-condition-action)</em> is nevezik.</p>
+</li>
+</ul>
+<p><strong>Példa:</strong></p>
+<pre><code class="language-SQL">  CREATE TRIGGER TeaTrig
+    BEFORE INSERT ON Felszolgál
+    REFERENCING NEW ROW AS ÚjSor
+    FOR EACH ROW
+    WHEN (ÚjSor.tea NOT IN 
+      (SELECT név FROM Teák))
+    INSERT INTO Teák(név)
+      VALUES(ÚjSor.tea);
+</code></pre>
+<h2 id="tranzakciók"><a class="header" href="#tranzakciók">Tranzakciók</a></h2>
+<ul>
+<li>Olyan folyamat, ami adatbázis lekérdezéseket, módosításokat tartalmaz</li>
+<li>Az itasítások egy &quot;értelmes egészet&quot; alkotnak</li>
+<li>Egyetlen utasítást tartalmaznak, vagy SQL-ben eyplicit módon megadhatóak</li>
+<li>Kell: végrehajtásuk tartós legyen</li>
+<li>Az oprendszerektől eltérően az AB rendszereknek el kell különíteniük a folyamatokat</li>
+</ul>
+<h3 id="tranzakciók-feldolgozása"><a class="header" href="#tranzakciók-feldolgozása">Tranzakciók feldolgozása</a></h3>
+<p>A tranzakciófeldolgozó két nagyobb részből áll:</p>
+<ol>
+<li>Konkurenciakezelő: tranzakciók oszthatatlanságára, elkülönítésére</li>
+<li>Naplózás- és helyreállítás-kezelő: tranzakciók tartóssága</li>
+</ol>
+<h3 id="acid-tranzakciók"><a class="header" href="#acid-tranzakciók">ACID tranzakciók</a></h3>
+<ul>
+<li><strong>Atomiság (atomicity):</strong> vagy az összes, vagy egy utasítás sem hajtódik végre</li>
+<li><strong>Konzisztencia (consistency):</strong> az adatbázis megszorítások megőrződnek</li>
+<li><strong>Elkülönítés (isolation):</strong> a felhasználók számára úgy tűnik, mintha a folyamatok elkülönítve, egymás után futnának le.</li>
+<li><strong>Tartósság (durability):</strong> egy befejeződott tranzakció módosítási nem vesznek el.</li>
+</ul>
+<h3 id="commit"><a class="header" href="#commit">COMMIT</a></h3>
+<ul>
+<li>A <code>COMMIT</code> SQL utasítás végrehajtása után a tranzakció véglegesnek tekinthető.</li>
+<li>A tranzakció módosításai véglegesítődnek</li>
+</ul>
+<h3 id="rollback"><a class="header" href="#rollback">ROLLBACK</a></h3>
+<ul>
+<li>A <code>ROLLBACK</code> SQL utasítás esetén a tranzakció <strong>abortál</strong>, azaz az összes utasítás visszagörgetésre kerül.</li>
+<li>A 0-val való osztás bvagy egyéb hibák szintén okozhatnak rollback-et.</li>
+</ul>
+<h3 id="elkülönítési-szintek"><a class="header" href="#elkülönítési-szintek">Elkülönítési szintek</a></h3>
+<ul>
+<li>Az SQL négy <strong>elkülönítési szintet</strong> definiál, amelyek megmondják, hogy milyen interakciók engedélyezettek egy időben végrehajtandó tranzakciók közöt.</li>
+<li>Ezek közül az egyik szint (&quot;sorbarendezhető&quot;) = ACID tranzakciók.</li>
+<li>Minden AB rendszer a saját tetszése szerint implementálhatja a tranzakciókat.</li>
+</ul>
+<p><code>SET TRANSACTION ISOLATION LEVEL X</code>, ahol X =</p>
+<ol>
+<li><code>SERIALIZABLE</code>: ACID tranzakció</li>
+<li><code>REPEATABLE READ</code>: ha az adatot újra beolvassuk, akkor amit először láttunk, másodszor is látni fogjuk</li>
+<li><code>READ COMMITED</code>: a tranzakció csak kommitálás utáni adatot láthat, de nem feltétlenül mindig ugyan azt az adatot</li>
+<li><code>READ UNCOMMITED</code>: akkor is látja a tranzakció az adatokat, amikor a változtatások még nem lettek véglegesítve</li>
+</ol>
+<p><img src="https://imgur.com/371jZEF.png" alt="" /></p>
+<h2 id="nézettáblák"><a class="header" href="#nézettáblák">Nézettáblák</a></h2>
+<ul>
+<li>
+<p>A nézettábla olyan reláció, amit tárolt táblák és más nézettáblák felhasználásával definiálunk.</p>
+</li>
+<li>
+<p>Kétféle létezik:</p>
+<ol>
+<li><strong>virtuális:</strong> nem tárolódik az adatbázisban, csak a relációt megadó lekérdezést tárolunk.</li>
+<li><strong>materializált:</strong> kiszámítódik, majd tárolásra kerül</li>
+</ol>
+</li>
+<li>
+<p>Deklaráció:</p>
+</li>
+</ul>
+<pre><code class="language-SQL">CREATE [MATERIALIZED] VIEW &lt;név&gt; AS &lt;lekérdezés&gt;;
+</code></pre>
+<ul>
+<li>Alapesetben virtualizált nézettábla jön létre.</li>
+</ul>
+<h3 id="materializált-nézettáblák"><a class="header" href="#materializált-nézettáblák">Materializált nézettáblák</a></h3>
+<ul>
+<li>
+<p><strong>Probléma:</strong> minden alkalommal, amikor az alaptáblák valamelyike változik, a materializált nézettábla
+frissítése is szükségessé válhat, ez viszont néha túl költséges.</p>
+</li>
+<li>
+<p><strong>Megoldás:</strong> Periodikus frissítése a materializált nézettáblának, amelyek egyébként &quot;nem aktuálisak&quot;.</p>
+</li>
+</ul>
+<h2 id="indexek"><a class="header" href="#indexek">Indexek</a></h2>
+<ul>
+<li>
+<p>Index = olyan adatszerkezet, amivel egy-egy reláció sorait gyorsabban érhetjük el adott attribútumának értéke,
+attribútumainak értékei alapján.</p>
+</li>
+<li>
+<p>Lehet hash tábla, de az AB rendszerekben a legtöbb esetben kiegyensúlyozott keresési fával valósítják meg <em>(B-fák)</em></p>
+</li>
+<li>
+<p>Nincs tipikus megadás, de tipikus szintaxis:</p>
+</li>
+</ul>
+<pre><code class="language-SQL">  CREATE INDEX TeaInd ON Teák(gyártó);
+  CREATE INDEX EladásInd ON Felszolgál(teázó, tea);
+</code></pre>
+<ul>
+<li>Adott <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span></span></span></span> értékre az index azokhoz a sorokhoz irányít, ahol ez a <span class="katex"><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">v</span></span></span></span> érték megjelenik a megfelelő attribútumoknál.</li>
+</ul>
+<h3 id="adatbázisok-hangolása"><a class="header" href="#adatbázisok-hangolása">Adatbázisok hangolása</a></h3>
+<ul>
+<li>Az adatbázisok hangolásánál komoly kérdést jelent annak eldöntése, hogy milyen indexeket használjanak.</li>
+<li><strong>Mellette:</strong> az index felgyorsíthatja a lekérdezések végrehajtását</li>
+<li><strong>Ellene:</strong> a módosítások lassabbak lesznek, hiszen az indexeket is módosítani kell.</li>
+</ul>
+<h2 id="jogosultságok"><a class="header" href="#jogosultságok">Jogosultságok</a></h2>
+<ul>
+<li>AZ SQL-ben több fajta jogosultság és adatobjektum létezik, mint egy tipikus fájlrendszerben.</li>
+<li>Összességében 9 jogosultság, ezek némelyike egy reláció egyetlen attribútumára is megadható.</li>
+</ul>
+<p><strong>Legfontosabb jogosultságok:</strong></p>
+<ul>
+<li>
+<p><code>SELECT</code></p>
+</li>
+<li>
+<p><code>INSERT</code></p>
+</li>
+<li>
+<p><code>UPDATE</code></p>
+</li>
+<li>
+<p><code>DELETE</code></p>
+</li>
+<li>
+<p>A magunk lkészítette objektumok esetében az összes jogosultsággal rendelkezünk</p>
+</li>
+<li>
+<p>Másoknak is megadhatunk jogosultságokat</p>
+</li>
+</ul>
+<pre><code class="language-SQL">GRANT &lt;jogosultságok listája&gt;
+ON &lt;adatobjektum&gt;
+TO &lt;jogosuétsági azonosítók listája&gt;
+</code></pre>
+<ul>
+<li>A <code>WITH GRANT OPTION</code> utasításrész lehetővé teszi, hogy aki megkapta a jogosultságot, tovább is adhassa azt.</li>
+</ul>
+<p><strong>Visszavonás:</strong></p>
+<pre><code class="language-SQL">REVOKE &lt;jogosultságok listája&gt;
+ON &lt;adatobjektum&gt;
+TO &lt;jogosuétsági azonosítók listája&gt;
+</code></pre>
+<ul>
+<li>Az általunk kiadott jogosultságok ez által visszavonódnak, de ha máshonnan is megkapták ugyanazt a jogosultságot, akkor az még megmarad.</li>
+</ul>
+<p><strong>REVOKE opciói:</strong></p>
+<ol>
+<li><code>CASCADE</code>: azok a jogosultságok is visszavonódnak, amelyeket az a személy adott ki, akitől most megvonjuk. </li>
+<li><code>RESTRICT</code>: a visszavonás nem hajtódik végre, amíg a visszavonandó jogosultságtól
+függő jogosultságok is vannak.</li>
+</ol>
+<h3 id="jogosultsági-azonosítók"><a class="header" href="#jogosultsági-azonosítók">Jogosultsági azonosítók</a></h3>
+<ul>
+<li>A felhasználókat egy jogosultsági azonosító alapján azonosítunk, általában ez a bejelentkezési név.</li>
+<li>Külön jogosultságok azonosító a <code>PUBLIC</code></li>
+</ul>
+<h2 id="források"><a class="header" href="#források">Források</a></h2>
+<ul>
+<li><a href="https://canvas.elte.hu/courses/34807/files/2160234/download">Diasor - Megszorítások</a></li>
+<li><a href="https://canvas.elte.hu/courses/34807/files/2171375/download">Diasor - Tranzakciók, nézettáblák, indexek I.</a></li>
+<li><a href="https://canvas.elte.hu/courses/34807/files/2171376/download">Diasor - Tranzakciók, nézettáblák, indexek II.</a></li>
+<li><a href="https://canvas.elte.hu/courses/34807/files/2171377/download">Diasor - Jogosultságok</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../adatb1/ea/03.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../../adatb1/ea/05.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../adatb1/ea/03.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../../adatb1/ea/05.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>

@@ -1,0 +1,565 @@
+<!DOCTYPE HTML>
+<html lang="hu" class="sidebar-visible no-js ayu">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>1. Szoftverfejlesztési folyamat - 4. félévi jegyzetek</title>
+
+
+        <!-- Custom HTML head -->
+        
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        <link rel="icon" href="../../favicon.svg">
+        <link rel="shortcut icon" href="../../favicon.png">
+        <link rel="stylesheet" href="../../css/variables.css">
+        <link rel="stylesheet" href="../../css/general.css">
+        <link rel="stylesheet" href="../../css/chrome.css">
+        <link rel="stylesheet" href="../../css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="../../FontAwesome/css/font-awesome.css">
+        <link rel="stylesheet" href="../../fonts/fonts.css">
+
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="../../highlight.css">
+        <link rel="stylesheet" href="../../tomorrow-night.css">
+        <link rel="stylesheet" href="../../ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        <link rel="stylesheet" href="../../src/image_style.css">
+
+    </head>
+    <body>
+    <div id="body-container">
+        <!-- Provide site root to javascript -->
+        <script>
+            var path_to_root = "../../";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "navy" : "ayu";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script>
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script>
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('ayu')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script>
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="../../about.html">A jegyzetről</a></li><li class="chapter-item expanded affix "><li class="part-title">A számításelmélet alapjai I.</li><li class="chapter-item expanded "><a href="../../szamelm1/ea/about.html">Előadás</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../szamelm1/ea/01.html">1. Alapfogalmak, nyelvek, grammatikák</a></li><li class="chapter-item expanded "><a href="../../szamelm1/ea/02.html">2. Grammatikák csoportosítása</a></li><li class="chapter-item expanded "><a href="../../szamelm1/ea/03.html">3. Lineáris grammatikák, 3-típusú grammatikák normálformája, reguláris kifelyezések</a></li><li class="chapter-item expanded "><a href="../../szamelm1/ea/04.html">4. Véges automaták</a></li><li class="chapter-item expanded "><a href="../../szamelm1/ea/05.html">5. Véges automata determinizálása, összefüggő automaták, algoritmikus eldöntési probléma</a></li><li class="chapter-item expanded "><a href="../../szamelm1/ea/06.html">6. Maradéknyelv, myhill-nerode tétel, minimális-, redukált-, faktor automata,</a></li><li class="chapter-item expanded "><a href="../../szamelm1/ea/07.html">7. Nyelvi egyenletrendszerek megoldása, általánosított automata</a></li><li class="chapter-item expanded "><a href="../../szamelm1/ea/08.html">8. Környezetfüggetlen grammatikák, Chomsky normálforma, CYK algoritmus</a></li><li class="chapter-item expanded "><a href="../../szamelm1/ea/09.html">9. Veremautomaták</a></li><li class="chapter-item expanded "><a href="../../szamelm1/ea/10.html">10. Levezetési fa, Nagy Bar-Hillel lemma - nincs jegyzet</a></li><li class="chapter-item expanded "><a href="../../szamelm1/ea/11.html">11. Környezetfüggő grammatikák</a></li><li class="chapter-item expanded "><a href="../../szamelm1/ea/12.html">12. Előadás - nincs jegyzet</a></li></ol></li><li class="chapter-item expanded "><a href="../../szamelm1/gyak/about.html">Gyakorlat</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../szamelm1/gyak/01.html">1. Nyelvek</a></li><li class="chapter-item expanded "><a href="../../szamelm1/gyak/02.html">2. Grammatikák I</a></li><li class="chapter-item expanded "><a href="../../elmaradt.html">3. Gyakorlat - elmaradt</a></li><li class="chapter-item expanded "><a href="../../szamelm1/gyak/04.html">4. Grammatikák II</a></li><li class="chapter-item expanded "><a href="../../szamelm1/gyak/05.html">5. Grammatikák III, reguláris kifejezések</a></li><li class="chapter-item expanded "><a href="../../szamelm1/gyak/06.html">6. Véges automaták</a></li><li class="chapter-item expanded "><a href="../../szamelm1/gyak/07.html">7. Zárthelyi</a></li><li class="chapter-item expanded "><a href="../../szamelm1/gyak/08.html">8. ZH megoldás, grammatikák visszamenőleg, általános automaták</a></li><li class="chapter-item expanded "><a href="../../szamelm1/gyak/09.html">9. Általános automaták, Chomsky normálforma, CYK algoritmus</a></li><li class="chapter-item expanded "><a href="../../szamelm1/gyak/10.html">10. Veremautomaták</a></li><li class="chapter-item expanded "><a href="../../szamelm1/gyak/11.html">11. Gyakorlat - nincs jegyzet</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Adatbázisok I.</li><li class="chapter-item expanded "><a href="../../adatb1/ea/about.html">Előadás</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../adatb1/ea/01.html">1. Bevezetés és relációs adatmodell</a></li><li class="chapter-item expanded "><a href="../../adatb1/ea/02.html">2. Relációs algebra lekérdezések optimizációja és bevezetés az SQL-be</a></li><li class="chapter-item expanded "><a href="../../adatb1/ea/03.html">3. Bevezetés az SQL-be, haladó SQL</a></li><li class="chapter-item expanded "><a href="../../adatb1/ea/04.html">4. Megszorítások, tranzakciók, nézettáblák, indexek, jogosultságok</a></li><li class="chapter-item expanded "><a href="../../adatb1/ea/05.html">5. Adatbázis tervezés I</a></li><li class="chapter-item expanded "><a href="../../adatb1/ea/06.html">6. Adatbázis tervezés II</a></li><li class="chapter-item expanded "><a href="../../adatb1/ea/07.html">7. Többértékű függőségek, egyed kapcsolat modell</a></li><li class="chapter-item expanded "><a href="../../adatb1/ea/08.html">8. Egyed-kapcsolat modell befejezése, objektum-relációs adatbázisok elkezdése</a></li><li class="chapter-item expanded "><a href="../../adatb1/ea/09.html">9. Objektum-relációs adatbázisok</a></li><li class="chapter-item expanded "><a href="../../adatb1/ea/10.html">10. XML séma</a></li><li class="chapter-item expanded "><a href="../../adatb1/ea/11.html">11. XML lekérdezőnyelvek</a></li><li class="chapter-item expanded "><a href="../../adatb1/ea/12.html">12. Extra - Analitikus adatfeldolgozás</a></li></ol></li><li class="chapter-item expanded "><a href="../../adatb1/gyak/about.html">Gyakorlat</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../adatb1/gyak/01.html">1. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../adatb1/gyak/02.html">2. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../adatb1/gyak/03.html">3. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../adatb1/gyak/04.html">4. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../adatb1/gyak/05.html">5. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../adatb1/gyak/06.html">6. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../adatb1/gyak/07.html">7. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../adatb1/gyak/08.html">8. Gyakorlat - ZH</a></li><li class="chapter-item expanded "><a href="../../adatb1/gyak/09.html">9. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../adatb1/gyak/10.html">10. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../elmaradt.html">11. Gyakorlat - elmaradt</a></li><li class="chapter-item expanded "><a href="../../adatb1/gyak/12.html">12. Gyakorlat</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Analízis II.</li><li class="chapter-item expanded "><a href="../../anal2/ea/about.html">Előadás</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../anal2/ea/01.html">1. Differenciálszámítás I.</a></li><li class="chapter-item expanded "><a href="../../anal2/ea/02.html">2. Differenciálszámítás II. és függvénytulajdonságok kapcsolata a deriválttal I.</a></li><li class="chapter-item expanded "><a href="../../anal2/ea/03.html">3. Függvénytulajdonságok kapcsolata a deriválttal II.</a></li><li class="chapter-item expanded "><a href="../../anal2/ea/04.html">4. Speciális függvények</a></li><li class="chapter-item expanded "><a href="../../anal2/ea/05.html">5. Taylor polinomok és Taylor sorok</a></li><li class="chapter-item expanded "><a href="../../anal2/ea/06.html">6. Integrálszámítás I</a></li><li class="chapter-item expanded "><a href="../../anal2/ea/07.html">7. Integrálszámítás II</a></li><li class="chapter-item expanded "><a href="../../anal2/ea/08.html">8. Többváltozós függvénytan I </a></li><li class="chapter-item expanded "><a href="../../anal2/ea/09.html">9. Többváltozós függvények deriválása I</a></li><li class="chapter-item expanded "><a href="../../anal2/ea/10.html">10. Többváltozós függvények deriválása II</a></li><li class="chapter-item expanded "><a href="../../anal2/ea/11.html">11. Többváltozós függvények deriválása III</a></li></ol></li><li class="chapter-item expanded "><a href="../../anal2/gyak/about.html">Gyakorlat</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../anal2/gyak/01.html">1. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../anal2/gyak/02.html">2. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../anal2/gyak/03.html">3. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../anal2/gyak/04.html">4. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../anal2/gyak/05.html">5. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../anal2/gyak/06.html">6. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../elmaradt.html">7. Gyakorlat - elmaradt, pótlás várható</a></li><li class="chapter-item expanded "><a href="../../anal2/gyak/08.html">8. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../anal2/gyak/09.html">9. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../elmaradt.html">10. Gyakorlat - elmaradt, pótlás várható</a></li><li class="chapter-item expanded "><a href="../../anal2/gyak/11.html">11. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../anal2/gyak/12.html">12. Gyakorlat - nincs jegyzet</a></li></ol></li><li class="chapter-item expanded "><a href="../../anal2/biz/about.html">Tételbizonyítások</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../anal2/biz/01.html">1. A folytonosság és a deriválhatóság kapcsolata</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/02.html">2. A szorzatfüggvény deriválási szabálya</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/03.html">3. A hányadosfüggvény deriválási szabálya</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/04.html">4. Az inverz függvény deriválási szabálya</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/05.html">5. A lokális szélsőértékre vonatkozó elsőrendű szükséges feltétel</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/06.html">6. A Rolle-féle középértéktétel</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/07.html">7. A Cauchy-féle középértéktétel</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/08.html">8. A monotonitás és a derivált kapcsolata</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/09.html">9. A konvexitás és a kétszeres derivált kapcsolata</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/10.html">10. A L'Hospital-szabály a 0/0 esetben</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/11.html">11. A deriválhatóság ekvivalens átfogalmazása lineáris közelítéssel</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/12.html">12. A Taylor-formula a Lagrange-féle maradéktaggal</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/13.html">13. Elégséges feltétel függvények Taylor-sorral történő előállítására</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/14.html">14. A határozatlan integrál linearitása</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/15.html">15. A parciális integrálás szabálya</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/16.html">16. A második helyettesítési szabály</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/17.html">17. Az integrálfüggvény folytonossága</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/18.html">18. Az integrálfüggvény deriválhatósága</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/19.html">19. A Newton-Leibniz-formula</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/20.html">20. Egy vektorsorozat és koordinátasorozatai konvergenciájának kapcsolata</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/21.html">21. A deriváltmátrix egyértelműsége</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/22.html">22. A deriváltmátrix előállítása</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/23.html">23. A totális- és az iránymenti derivált kapcsolata</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/24.html">24. R^n → R  típusú függvényekre vonatkozó elsőrendű szükséges feltétel a lokális szélsőértékre</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/25.html">25. R^n → R  típusú függvényekre vonatkozó másodrensű elégséges feltétel a lokális szélsőértékre</a></li><li class="chapter-item expanded "><a href="../../anal2/biz/26.html">26. R^n → R típusú függvényekre vonatkozó másodrendű szükséges feltétel a lokális szélsőértékre</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Operációs rendszerek</li><li class="chapter-item expanded "><a href="../../os/ea/about.html">Előadás</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../os/ea/01.html">1. Előadás</a></li><li class="chapter-item expanded "><a href="../../os/ea/02.html">2. Előadás</a></li><li class="chapter-item expanded "><a href="../../os/ea/03.html">3. Előadás</a></li><li class="chapter-item expanded "><a href="../../os/ea/04.html">4. Előadás</a></li><li class="chapter-item expanded "><a href="../../os/ea/05.html">5. Előadás</a></li><li class="chapter-item expanded "><a href="../../os/ea/06.html">6. Előadás</a></li><li class="chapter-item expanded "><a href="../../elmaradt.html">7. Előadás - elmaradt, pótlás várható</a></li><li class="chapter-item expanded "><a href="../../elmaradt.html">8. Előadás - elmaradt</a></li><li class="chapter-item expanded "><a href="../../os/ea/09.html">9. Előadás</a></li><li class="chapter-item expanded "><a href="../../elmaradt.html">10. Előadás - elmaradt</a></li><li class="chapter-item expanded "><a href="../../os/ea/11.html">11. Előadás - ZH</a></li><li class="chapter-item expanded "><a href="../../os/ea/12.html">12. Előadás - ZH</a></li></ol></li><li class="chapter-item expanded "><a href="../../os/gyak/about.html">Gyakorlat</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../os/gyak/01.html">1. C bevezető</a></li><li class="chapter-item expanded "><a href="../../os/gyak/02.html">2. Rendszerhívások, fájlkezelés</a></li><li class="chapter-item expanded "><a href="../../os/gyak/03.html">3. Processzkezelés</a></li><li class="chapter-item expanded "><a href="../../os/gyak/04.html">4. Signal</a></li><li class="chapter-item expanded "><a href="../../os/gyak/05.html">5. Pipe</a></li><li class="chapter-item expanded "><a href="../../os/gyak/06.html">6. Messages, shared memory, semafor</a></li><li class="chapter-item expanded "><a href="../../os/gyak/07.html">7. Beadandó bemutatás</a></li><li class="chapter-item expanded "><a href="../../os/gyak/08.html">8. Message queue</a></li><li class="chapter-item expanded "><a href="../../os/gyak/09.html">9. Feladatmegoldás</a></li><li class="chapter-item expanded "><a href="../../os/gyak/10.html">10. Feladatmegoldás</a></li><li class="chapter-item expanded "><a href="../../os/gyak/11.html">11. Feladatmegoldás</a></li><li class="chapter-item expanded "><a href="../../os/gyak/12.html">12. Beadandó bemutatás</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Szoftver mély neuronhálók alkalmazásához</li><li class="chapter-item expanded "><a href="../../soft_deep_neural/about.html">Előadás</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../soft_deep_neural/01.html">1. Bevezetés a gépi tanulás feladataiba és fajtáiba</a></li><li class="chapter-item expanded "><a href="../../soft_deep_neural/02.html">2. Regressziós technikák</a></li><li class="chapter-item expanded "><a href="../../soft_deep_neural/03.html">3. Többváltozós regresszió, klasszifikáció, logisztikus regresszió</a></li><li class="chapter-item expanded "><a href="../../soft_deep_neural/04.html">4. Python, numpy</a></li><li class="chapter-item expanded "><a href="../../soft_deep_neural/05.html">5. Feladatmegoldások</a></li><li class="chapter-item expanded "><a href="../../soft_deep_neural/06.html">6. Betanítási költség, túltanulás, alultanulás, neuron</a></li><li class="chapter-item expanded "><a href="../../elmaradt.html">7. Előadás - elmaradt</a></li><li class="chapter-item expanded "><a href="../../soft_deep_neural/08.html">8. Előadás</a></li><li class="chapter-item expanded "><a href="../../soft_deep_neural/09.html">9. Előadás</a></li><li class="chapter-item expanded "><a href="../../elmaradt.html">10. Előadás - elmaradt</a></li><li class="chapter-item expanded "><a href="../../soft_deep_neural/11.html">11. Túltanulás elkerülése, konvolúciós hálózatok</a></li><li class="chapter-item expanded "><a href="../../soft_deep_neural/12.html">12. Előadás - nincs jegyzet</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Szoftvertechnológia</li><li class="chapter-item expanded "><a href="../../softtech/ea/about.html">Előadás</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../softtech/ea/01.html" class="active">1. Szoftverfejlesztési folyamat</a></li><li class="chapter-item expanded "><a href="../../softtech/ea/02.html">2. Specifikáció és követelménymenedzsment</a></li><li class="chapter-item expanded "><a href="../../softtech/ea/03.html">3. Objektumorientált tervezés</a></li><li class="chapter-item expanded "><a href="../../softtech/ea/04.html">4. Objektumorientált tervezési szempontok és minták</a></li><li class="chapter-item expanded "><a href="../../softtech/ea/05.html">5. Projekteszközök, verziókezelés</a></li><li class="chapter-item expanded "><a href="../../softtech/ea/06.html">6. Build systems</a></li><li class="chapter-item expanded "><a href="../../softtech/ea/07.html">7. Verifikáció és validáció</a></li><li class="chapter-item expanded "><a href="../../softtech/ea/08.html">8. CI/CD - nincs jegyzet</a></li><li class="chapter-item expanded "><a href="../../softtech/ea/09.html">9. Test Driven Development, Clean Code - nincs jegyzet</a></li><li class="chapter-item expanded "><a href="../../softtech/ea/10.html">10. Szálak - nincs jegyzet</a></li><li class="chapter-item expanded "><a href="../../softtech/ea/11.html">11. Tervminták - nincs jegyzet</a></li><li class="chapter-item expanded "><a href="../../softtech/ea/12.html">12. Networking - nincs jegyzet</a></li></ol></li><li class="chapter-item expanded "><a href="../../softtech/gyak/about.html">Gyakorlat</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../softtech/gyak/01.html">1. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../softtech/gyak/02.html">2. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../softtech/gyak/03.html">3. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../softtech/gyak/04.html">4. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../softtech/gyak/05.html">5. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../softtech/gyak/06.html">6. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../elmaradt.html">7. Gyakorlat - elmaradt</a></li><li class="chapter-item expanded "><a href="../../softtech/gyak/08.html">8. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../softtech/gyak/09.html">9. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../elmaradt.html">10. Gyakorlat - elmaradt</a></li><li class="chapter-item expanded "><a href="../../elmaradt.html">11. Gyakorlat - elmaradt</a></li><li class="chapter-item expanded "><a href="../../softtech/gyak/12.html">12. Gyakorlat</a></li></ol></li><li class="chapter-item expanded "><li class="part-title">Számítógépes grafika</li><li class="chapter-item expanded "><a href="../../cg/ea/about.html">Előadás</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../cg/ea/01.html">1. Bevezetés a számítógépes grafikába</a></li><li class="chapter-item expanded "><a href="../../cg/ea/02.html">2. Koordináta-rendszerek, egyenesek és síkok</a></li><li class="chapter-item expanded "><a href="../../cg/ea/03.html">3. Transzformációk</a></li><li class="chapter-item expanded "><a href="../../cg/ea/04.html">4. Görbék, felületek és a fény útja</a></li><li class="chapter-item expanded "><a href="../../cg/ea/05.html">5. Raycasting</a></li><li class="chapter-item expanded "><a href="../../cg/ea/06.html">6. Fejlettebb raycasting</a></li></ol></li><li class="chapter-item expanded "><a href="../../cg/gyak/about.html">Gyakorlat</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="../../cg/gyak/01.html">1. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../cg/gyak/02.html">2. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../cg/gyak/03.html">3. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../cg/gyak/04.html">4. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../cg/gyak/05.html">5. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../cg/gyak/06.html">6. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../elmaradt.html">7. Gyakorlat - elmaradt</a></li><li class="chapter-item expanded "><a href="../../cg/gyak/08.html">8. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../cg/gyak/09.html">9. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../elmaradt.html">10. Gyakorlat - elmaradt</a></li><li class="chapter-item expanded "><a href="../../cg/gyak/11.html">11. Gyakorlat</a></li><li class="chapter-item expanded "><a href="../../cg/gyak/12.html">12. Gyakorlat</a></li></ol></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+
+                    <h1 class="menu-title">4. félévi jegyzetek</h1>
+
+                    <div class="right-buttons">
+                        <a href="../../print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        <a href="https://github.com/vismate/jegyzetek-4" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script>
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css" integrity="sha384-AfEj0r4/OFrOo5t7NnNe46zW/tFgW6x/bCJG8FqQCEo3+Aro6EYUG4+cU+KJWu/X" crossorigin="anonymous">
+<h1 id="szoftverfejlesztési-folyamat"><a class="header" href="#szoftverfejlesztési-folyamat">Szoftverfejlesztési folyamat</a></h1>
+<!--toc:start-->
+<ul>
+<li><a href="#szoftverfejleszt%C3%A9si-folyamat">Szoftverfejlesztési folyamat</a>
+<ul>
+<li><a href="#szoftverfejleszt%C3%A9s">Szoftverfejlesztés</a></li>
+<li><a href="#a-szoftvertechnol%C3%B3gia">A szoftvertechnológia</a></li>
+<li><a href="#min%C5%91s%C3%A9gi-mutat%C3%B3k">Minőségi mutatók</a></li>
+<li><a href="#szoftvertechnol%C3%B3giai-projekt">Szoftvertechnológiai projekt</a></li>
+<li><a href="#a-szoftver-%C3%A9letciklus">A szoftver életciklus</a>
+<ul>
+<li><a href="#specifik%C3%A1ci%C3%B3">Specifikáció</a></li>
+<li><a href="#tervez%C3%A9s-%C3%A9s-implement%C3%A1ci%C3%B3">Tervezés és implementáció</a></li>
+<li><a href="#valid%C3%A1ci%C3%B3-%C3%A9s-evol%C3%BAci%C3%B3">Validáció és evolúció</a></li>
+</ul>
+</li>
+<li><a href="#%C3%BCtemterv">Ütemterv</a></li>
+<li><a href="#m%C3%A9rf%C3%B6ldk%C3%B6vek">Mérföldkövek</a></li>
+<li><a href="#az-uml">Az UML</a></li>
+<li><a href="#szoftvereszk%C3%B6z%C3%B6k">Szoftvereszközök</a></li>
+<li><a href="#a-v%C3%ADzes%C3%A9s-modell">A vízesés modell</a></li>
+<li><a href="#protot%C3%ADpusok">Prototípusok</a></li>
+<li><a href="#a-spir%C3%A1lis-modell">A spirális modell</a></li>
+<li><a href="#az-inkrement%C3%A1lis-modell">Az inkrementális modell</a></li>
+<li><a href="#agilis-szoftverfejleszt%C3%A9s">Agilis szoftverfejlesztés</a>
+<ul>
+<li><a href="#az-agilis-ki%C3%A1ltv%C3%A1ny">Az agilis Kiáltvány</a></li>
+</ul>
+</li>
+<li><a href="#scrum-m%C3%B3dszer">Scrum módszer</a></li>
+<li><a href="#csoportos%C3%ADt%C3%A1s">Csoportosítás</a></li>
+<li><a href="#forr%C3%A1sok">Források</a></li>
+</ul>
+</li>
+</ul>
+<!--toc:end-->
+<h2 id="szoftverfejlesztés"><a class="header" href="#szoftverfejlesztés">Szoftverfejlesztés</a></h2>
+<p>A szoftverek nélülözhetetlen alkotóelemei a modern világnak.</p>
+<ul>
+<li>Szémos célt szolgálnak</li>
+<li>Különböző felépítésűek</li>
+<li>emiatt megvalósításuk módja jelentősen eltérhet</li>
+</ul>
+<p>A szoftverekben jelentős része hibás, a szoftverfejlesztési
+munkák jelentős része kudarcba fullad, ennek okai:</p>
+<ul>
+<li>Egyre nagyobb számban, egyre összetettebb szoftverekre van szükség</li>
+<li>Alacsonyabbak az elvárások a szoftverekkel szemben.</li>
+</ul>
+<p>Emiatt nagy szükség van <em>professzionális szoftverfejlesztésre</em></p>
+<h2 id="a-szoftvertechnológia"><a class="header" href="#a-szoftvertechnológia">A szoftvertechnológia</a></h2>
+<p>Egy szoftvernek, mint terméknek gyártási technológiára van
+szüksége, amely garantálja a program funkcióit, minőségét,
+költségét és határidejét.</p>
+<p>A szoftvertechnológia feladata szoftverek rendszerezett,
+felügyelt, minősített fejlesztése, működtetése és karbantartása</p>
+<ul>
+<li>programok</li>
+<li>dokumentáció</li>
+<li>konfiguráció</li>
+<li>adatok</li>
+</ul>
+<p>A szoftverek többsége nagy méretű, nagy bonyolultságú
+programrendszer, amely</p>
+<ul>
+<li>Rendszerint csapatmunkában készül</li>
+<li>Hosszú élettartamú, karbantartást és bővítést igényel</li>
+</ul>
+<h2 id="minőségi-mutatók"><a class="header" href="#minőségi-mutatók">Minőségi mutatók</a></h2>
+<p>A szoftvereknek megfelelő színvonalon kell biztosítania az
+elvárt funkciókat, amit a szoftver minőségi mutatóival (quality
+characteristics) írhatunk le</p>
+<ul>
+<li>Karbantarthatóság</li>
+<li>Megbízhatóság és biztonság</li>
+<li>Hatékonyság</li>
+<li>Használhatóság, hozzáférhetőség</li>
+</ul>
+<h2 id="szoftvertechnológiai-projekt"><a class="header" href="#szoftvertechnológiai-projekt">Szoftvertechnológiai projekt</a></h2>
+<p>A szoftver fejlesztésének folyamatát projektnek, előállításának
+felügyeletét projektmenedzselésnek nevezzük.</p>
+<p>A projektért felelős személy a projektmenedzser
+(project manager), aki</p>
+<ul>
+<li>Biztosítja, hogy a szoftver megfelel az előírt minőségnek, és elkészül a megadott
+határidőre a költségkereten belül.</li>
+<li>Szervezi, irányítja, ütemezi a projektben részt vevő csapat munkáját,
+és biztosítja a szükséges hardver és szoftver erőforrásokat.</li>
+<li>Garantálja a módszerek és szabványok alkalmazását</li>
+<li>Gondoskodik a projekt dokumentáltságáról</li>
+</ul>
+<p>A szoftverfejlesztési csapatnak számos további tagja lehet, akik
+különböző szerepeket töltenek be, pl.:</p>
+<ul>
+<li><strong>Termékgazda:</strong> üzleti folyamatok, prioritások és elfogadási feltételek kezelése</li>
+<li><strong>Programgazda:</strong> fejlesztés ütemezése, feladatok elosztása és követése.</li>
+<li><strong>Tervező:</strong> szoftver magas szintű tervének elkészítése, technikai döntések kezelése</li>
+<li><strong>Fejlesztő:</strong> szoftver implementációja</li>
+<li><strong>Minőségbiztosítás:</strong> tesztelés tervezése, megvalósításai</li>
+</ul>
+<p><img src="https://imgur.com/oHpEg9y.png" alt="" /></p>
+<h2 id="a-szoftver-életciklus"><a class="header" href="#a-szoftver-életciklus">A szoftver életciklus</a></h2>
+<p>Minden szoftver rendelkezik életciklussal, amely meghatározza létét a feladat
+kitűzésétől a program használatának befejezéséig.</p>
+<p>Az életciklus általában négy fő fázisra bontható:</p>
+<ol>
+<li>specifikáció</li>
+<li>tervezés és implementáció</li>
+<li>verifikáció és validáció</li>
+<li>evolúció</li>
+</ol>
+<p><img src="https://imgur.com/mgRMDAv.png" alt="" /></p>
+<h3 id="specifikáció"><a class="header" href="#specifikáció">Specifikáció</a></h3>
+<p>A specifikáció (software specification) célja a feladatot megoldó
+szoftver funkcióinak tisztázása, a rendszerre és a fejlesztésre
+vonatkozó elvárások megadása.</p>
+<p>feltérképezi a követelményeket felhasználói, valamint
+fejlesztői szemszögből, lépései:</p>
+<ul>
+<li>megvalósíthatósági elemzés</li>
+<li>követelmény feltárás és elemzés</li>
+<li>követelmény specifikáció</li>
+<li>követelmény validáció</li>
+</ul>
+<p>Eredménye a szoftver követelmény-leírása <em>(software
+requirements specification)</em></p>
+<h3 id="tervezés-és-implementáció"><a class="header" href="#tervezés-és-implementáció">Tervezés és implementáció</a></h3>
+<p>A szoftver tervezése és implementációja <em>(software design and
+implementation)</em> feladata a specifikáció átalakítása egy
+végrehajtható rendszerré.</p>
+<p>Meghatározza a rendszer szerkezetét <em>(felépülés)</em>, felületét
+<em>(be- és kimenet)</em>, működését <em>(alkalmazott algoritmusok,
+kommunikációs folyamatok)</em></p>
+<p>A folyamat során elkészül a szoftver rendszerterve <em>(software
+design description)</em>, amely tartalmazza a program statikus
+és dinamikus szerkezetét, a kommunikációs csatornák
+feltérképezését, az implementációs és tesztelési tervet.</p>
+<p>Elkészíthető a szoftver prototípusa <em>(prototype)</em>, amely a
+program egyszerűsített megvalósítását tartalmazza.</p>
+<p>Az implementációhoz megfelelő szoftverfejlesztési
+környezetet kell használnunk, a programkód változásait
+verziókövetéssel tartjuk nyilván.</p>
+<p>Az implementáció részeként az egyes programegységek
+tesztelése is megtörténhet.</p>
+<p>A szoftverek tervezésének és programozásának módszerét
+nevezzük programozási paradigmának.</p>
+<ul>
+<li>Meghatározza a programozási stílust, az absztrakciós szintet.</li>
+<li>Meghatározza az alkalmazható programozási nyelvek körét is, és fordítva.</li>
+</ul>
+<p><img src="https://imgur.com/SxgmYIi.png" alt="" /></p>
+<h3 id="validáció-és-evolúció"><a class="header" href="#validáció-és-evolúció">Validáció és evolúció</a></h3>
+<p>A verifikáció és validáció <em>(software verification and validation)</em>
+célja megmutatni, hogy a rendszer megfelel a specifikációnak,
+valamint a felhasználói elvárásoknak.</p>
+<p>Az evolúció <em>(software evolution)</em> során új követelményeknek
+megfelelően bővítjük a szoftvert, illetve korrigáljuk a felmerülő
+hibákat.</p>
+<hr>
+<p>További lépések is kísérhetik a fejlesztési folyamatot, pl.</p>
+<ul>
+<li>kihelyezés <em>(deployment)</em>: a program üzembe állítása, és
+elérhetővé tétele.</li>
+<li>tréning és támogatás <em>(training and support)</em>: a
+felhasználókkal való kapcsolattartás (annak biztosítása,
+hogy a szoftvert megfelelően tudják kezelni és használni)</li>
+</ul>
+<p>A szoftver dokumentációja két részből tevődik össze:</p>
+<ul>
+<li>felhasználói dokumentáció, amely tartalmazza a szoftver
+üzembe helyezésének, funkcióinak bemutatását</li>
+<li>fejlesztői dokumentáció, amely tartalmazza a szoftver
+megvalósítását folyamatát és részletes ismertetését</li>
+</ul>
+<h2 id="Ütemterv"><a class="header" href="#Ütemterv">Ütemterv</a></h2>
+<p>A szoftver életciklus fázisai (feladatai) további fázisokra
+(részfeladatokra) tagolhatóak, így egy hierarchikus
+feladatszerkezetet kapunk.</p>
+<ul>
+<li>Az egyes feladatokra erőforrásokat és időkorlátot adhatunk</li>
+<li>Az egyes feladatok között függőségeket állapíthatunk meg</li>
+<li>Ezek alapjén elkészíthetjük a projekt ütemtervét
+<ul>
+<li>Tartalmazza a feladatok időbeli beosztását, függőségeit, felelőseit, így 
+áttekinthetővé teheti az erőforrás szükségleteket.</li>
+<li>Általában a specifikáció során készül el, de később módosulhat.</li>
+</ul>
+</li>
+</ul>
+<h2 id="mérföldkövek"><a class="header" href="#mérföldkövek">Mérföldkövek</a></h2>
+<p>A feladatokhoz mérföldköveket <em>(milestone)</em> rendelhetünk,
+amelyek lehetőséget adnak a projekt haladásában történő
+betekintésre.</p>
+<ul>
+<li>A márföldkő egy adott cél adott időpontra történő elérését jelenti, így
+névvel, eseménnyel, céllal rendelkezik.</li>
+<li>A mérföldkövek be nem tartása általában korrekciókat követel a projekt lefutásában.</li>
+<li>Kellően konkrétnak, ellenőrizhetőnek, számonkérhetőnek kell lennie.</li>
+<li>A fő mérföldkövek az egyes fázisok lezárását jelentik, ezen kívül számos
+további mérföldkő adható.</li>
+</ul>
+<h2 id="az-uml"><a class="header" href="#az-uml">Az UML</a></h2>
+<p>A szoftverfejlesztési életciklust folyamatosan követi a
+modellezés, ennek eszköze az egységes modellezési nyelv
+<em>(Unified Modeling Language, UML)</em>, amely egy öt pillérű
+szemléletrendszerrel rendelkezik:</p>
+<ul>
+<li><strong>Használati:</strong> a szoftver szolgáltatásai és azok kapcsolata a felhasználókkal.</li>
+<li><strong>Szerkezeti (statikus):</strong> a rendzser és a programegységek felépítése, kapcsolatai.</li>
+<li><strong>Dinamikus:</strong> a programegységek viselkedése.</li>
+<li><strong>Implementációs:</strong> a megvalósítás szempontjai, komponensei.</li>
+<li><strong>Környezeti:</strong> hardver és szoftver erőforrások.</li>
+</ul>
+<h2 id="szoftvereszközök"><a class="header" href="#szoftvereszközök">Szoftvereszközök</a></h2>
+<p>A fejlesztőcsapat munkáját megfelelő szoftvereszközökkel kell
+alátámasztani</p>
+<ul>
+<li>Projektirányítási eszközzel <em>(project tracking system)</em>, amely
+támogatja a dokumentálást és a feladatok követését.</li>
+<li>Fejlett tervezőeszközzel <em>(case tool)</em>, ahol a fejlesztés
+folyamata és a felelősség is nyomon követhető.</li>
+<li>Integrált fejlesztőkörnyezettel <em>(IDE)</em>, amely elősegíti a
+csapatmunkát.</li>
+<li>Verziókövető rendszerrel <em>(revision control system)</em>, amely
+lehetővé teszi a programkód változásainak követését.</li>
+<li>Folyamatos integrációs eszközzel <em>(continuous integration)</em>,
+amely elősegíti a tevékenységek automatizálását.</li>
+</ul>
+<h2 id="a-vízesés-modell"><a class="header" href="#a-vízesés-modell">A vízesés modell</a></h2>
+<p>A szoftverfejlesztési modell határozza meg az életciklus egyes
+fázisai közötti kapcsolatot, időbeliséget.</p>
+<p>A legegyszerűbb fejlesztési modell a vízesés <em>(waterfall)</em> modell,
+amelyben az egyes fázisok lineárisan követik egymást.</p>
+<ul>
+<li>Előre megtervezi a projekt időtartamát, ráfordításait.</li>
+<li>Elvárja minden fázis megfelelő dokumentálását, amely
+tartalmazza annak eredményeit.</li>
+<li><strong>Előnyei:</strong> jól strukturált, dokumentált folyamatot biztosít.</li>
+<li><strong>Hátrányai:</strong> nem teszi lehetővé a követelmények
+megváltoztatását, nem készül fel az esetleges
+nehézségekre <em>(nincs kockázatkezelés)</em>.</li>
+</ul>
+<p><img src="https://imgur.com/csg2Frs.png" alt="" /></p>
+<h2 id="prototípusok"><a class="header" href="#prototípusok">Prototípusok</a></h2>
+<p>A szoftverfejlesztés során felmerülő nehézségek könnyebben
+előreláthatóak, ha a szoftvernek elkészítjük a prototípusait
+<em>(prototyping)</em>, amely lehet:</p>
+<ul>
+<li><strong>Horizontális prototípus:</strong> interakciós szempontból mutatja be a szoftvert.</li>
+<li><strong>Vertikális prototípus:</strong> egy adott funkciócsoport részletes megvalósítása.</li>
+</ul>
+<p>A folyamat során megvalósított prototípusok a szoftver részévé
+válhatnak <em>(evolutionary prototyping)</em>, vagy szolgálhatják csak a
+bemutatást/ellenőrzést, és ténylegesen nem kerülnek
+felhasználásra <em>(throwaway prototyping)</em>.</p>
+<h2 id="a-spirális-modell"><a class="header" href="#a-spirális-modell">A spirális modell</a></h2>
+<p>A <em>(Boehm-féle)</em> spirális modell egy kockázatvezérelt
+fejlesztési modell, amelyben a folyamat során elsőként
+prototípusok kerülnek megvalósításra, amelyek kiértékelése
+után kerül megvalósításra a tényleges szoftver.</p>
+<ul>
+<li>A fejlesztés ciklusokban történik, amelyben az elkészített
+prototípusok, valamint a továbbfejlesztésével kapcsolatos
+kockázatok kiértékelésre kerülnek.</li>
+<li><strong>Előnyei:</strong> jobban alkalmazkodik a változó követelményekhez,
+a prototípusok lehetővé teszik a nehézségek előrelátását.</li>
+<li><strong>Hátrányai:</strong> költségesebb a prototípus elkészítése és a
+kockázatkiértékelés végett, továbbá a prototípusok
+megzavarhatják a felhasználót.</li>
+</ul>
+<p><img src="https://imgur.com/8Sgx3PF.png" alt="" /></p>
+<h2 id="az-inkrementális-modell"><a class="header" href="#az-inkrementális-modell">Az inkrementális modell</a></h2>
+<p>Az inkrementális modell több lépésből építi fel a
+folyamatot, és több változatban állítja elő a szoftvert.</p>
+<ul>
+<li>Minden változat egy újabb funkcionalitással bővíti a
+szoftvert, a fázisok rövidek, gyors visszajelzésekkel.</li>
+<li>Az egyes fázisok átfedésben vannak, és kihatnak egymásra.</li>
+<li><strong>Előnyei:</strong> gyorsan alkalmazkodik a változó
+követelményekhez, a felhasználó jobban követheti a
+fejlesztési folyamatot.</li>
+<li><strong>Hátrányai:</strong> kevésbé menedzselhető, tervezhető, áttekinthető,
+nehezebben validálható.</li>
+</ul>
+<p><img src="https://imgur.com/PNpbBlQ.png" alt="" /></p>
+<h2 id="agilis-szoftverfejlesztés"><a class="header" href="#agilis-szoftverfejlesztés">Agilis szoftverfejlesztés</a></h2>
+<p>Az agilis szoftverfejlesztés célja a
+gyors alkalmazásfejlesztés megvalósítása, inkrementális alapon.</p>
+<ul>
+<li>A szoftver folyamatos fejlesztés és kiadás alatt áll
+<em>(continuous delivery)</em>, a sebesség állandó, a változtatások
+minden lépésben beépíthetőek <em>(welcome changes)</em>.</li>
+<li>A működő szoftver az előrehaladás mérőeszköze, előtérben
+az egyszerűség, ugyanakkor folyamatos odafigyelés a
+megfelelő tervezésre, optimalizációra.</li>
+<li>A fejlesztést általában önszervező, kis csapatok végzik,
+megosztott felelősséggel, folytonos interakcióval, gyors
+visszajelzésekkel.</li>
+<li><strong>Előnyei:</strong> jól alkalmazkodik a változtatásokhoz, hatékonyabbá
+teszi a fejlesztési folyamatot.</li>
+<li><strong>Hátrányai:</strong> egyes tényezői nehezen megvalósíthatóak,
+különösen nagyobb szoftverek esetén a megvalósításhoz
+képzett fejlesztők kellenek, a dokumentáció hiánya
+megnehezíti a későbbi evolúciót.</li>
+</ul>
+<h3 id="az-agilis-kiáltvány"><a class="header" href="#az-agilis-kiáltvány">Az agilis Kiáltvány</a></h3>
+<p>Azzal leplezzük le a szoftverfejlesztés jobb módjait, hogy csináljuk
+és segítünk másoknak is csinálni. Ezen a munkán keresztül
+következő értékekhez jutottunk el:</p>
+<ul>
+<li>Egyének és kölcsönhatások előnyben részesítése a
+folyamatok- és eszközökkel szemben.</li>
+<li>Működő szoftver előnyben részesítése az átfogó
+dokumentációval szemben.</li>
+<li>Ügyféllel való együttműködés előnyben részesítése a
+szerződéses megállapodással szemben.</li>
+<li>Változásokra adandó válasz előnyben részesítése egy terv
+követésével szemben.</li>
+</ul>
+<p>Habár a jobb oldali elemekben is van érték, mi sokkal
+értékesebbnek tartjuk a baloldali elemeket.</p>
+<h2 id="scrum-módszer"><a class="header" href="#scrum-módszer">Scrum módszer</a></h2>
+<p>Az agilis fejlesztés menedzselését az egyes változatok
+előállítása szempontjából közelítik meg, amelyhez a <em>Scrum</em>
+módszer ad egy általános modellt.</p>
+<ol>
+<li>Architekturális tervezés, amely megadja a szoftver
+magas szintű vázát.</li>
+<li>Futamok <em>(sprint)</em>, amelyek az egyes változatokat állítják
+elő, és rögzített hosszúságúak (2-4 hét).</li>
+<li>Projektzárás, a szükséges dokumentáció előállítása.</li>
+</ol>
+<p>Nincs projektmenedzser, de minden futamnak van felelőse
+(scrum master), akinek a személye futamonként változik.</p>
+<p>Minden futam egy összetett folyamat megtervezett lépésekkel</p>
+<ul>
+<li>Feladatok felmérése <em>(select)</em>, lefejlesztése <em>(develop)</em>,
+áttekintése <em>(review)</em>, kiértékelése <em>(assess)</em>.</li>
+<li>A megvalósítandó funkciók a termékgazdával egyetértésben
+kerülnek kiválasztásra a teendők listájából <em>(product backlog)</em>.</li>
+<li>Naponta rövidebb megbeszélések <em>(stand-up meeting)</em> a
+teljes csapat számára.</li>
+<li>Ciklus elején/végén hosszabb megbeszélések <em>(sprint
+planning, sprint review)</em>, valamint visszatekintés
+<em>(retrospective)</em> a termékgazdával.</li>
+</ul>
+<p><img src="https://imgur.com/cnOHuLl.png" alt="" /></p>
+<h2 id="csoportosítás"><a class="header" href="#csoportosítás">Csoportosítás</a></h2>
+<p>A szoftverfejlesztési modelleket 3 csoportba soroljuk.</p>
+<ul>
+<li><strong>Terv-vezérelt (plan-driven):</strong> célja a rend fenntartása, a
+szoftver fejlesztése előzetes specifikáció és tervezés
+alapján történik, igyekszik garantálni a minőséget.</li>
+<li><strong>Agilis:</strong> célja a változáshoz történő alkalmazkodás, az
+egyszerűség, így kevésbé garantálja a minőséget.</li>
+<li><strong>Formális:</strong> garantálja a minőséget, az implementáció
+bizonyíthatóan helyes megoldását adja a specifikációnak.</li>
+</ul>
+<p>A gyakorlatban a fejlesztőcsapat és a feladat befolyásolja
+leginkább a választott módszert, sokszor különböző módszerek vegyítve jelennek meg.</p>
+<h2 id="források"><a class="header" href="#források">Források</a></h2>
+<ul>
+<li><a href="https://docs.google.com/viewerng/viewer?url=https://canvas.elte.hu/courses/33518/files/2098049/download?verifier%3D8BHcDtlb6Vzs4L3ZQLTlg0whkg7KM0VbsbXexK3p">Diasor</a></li>
+</ul>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                            <a rel="prev" href="../../softtech/ea/about.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                                <i class="fa fa-angle-left"></i>
+                            </a>
+
+                            <a rel="next" href="../../softtech/ea/02.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                                <i class="fa fa-angle-right"></i>
+                            </a>
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                    <a rel="prev" href="../../softtech/ea/about.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                        <i class="fa fa-angle-left"></i>
+                    </a>
+
+                    <a rel="next" href="../../softtech/ea/02.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                        <i class="fa fa-angle-right"></i>
+                    </a>
+            </nav>
+
+        </div>
+
+
+
+
+        <script>
+            window.playground_copyable = true;
+        </script>
+
+
+        <script src="../../elasticlunr.min.js"></script>
+        <script src="../../mark.min.js"></script>
+        <script src="../../searcher.js"></script>
+
+        <script src="../../clipboard.min.js"></script>
+        <script src="../../highlight.js"></script>
+        <script src="../../book.js"></script>
+
+        <!-- Custom JS scripts -->
+
+
+    </div>
+    </body>
+</html>
